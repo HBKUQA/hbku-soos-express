@@ -1,0 +1,3266 @@
+<!DOCTYPE html>
+<html lang="fr-FR" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#3813c2" />
+
+    <link
+      rel="pingback"
+      href="http://mqixntn.cluster031.hosting.ovh.net/xmlrpc.php"
+    />
+
+    <title>Virtual Student Orientation &#8211; Testing Version</title>
+    <style type="text/css" media="screen">
+      #ui-datepicker-div.booked_custom_date_picker
+        table.ui-datepicker-calendar
+        tbody
+        td
+        a.ui-state-active,
+      #ui-datepicker-div.booked_custom_date_picker
+        table.ui-datepicker-calendar
+        tbody
+        td
+        a.ui-state-active:hover,
+      body #booked-profile-page input[type="submit"].button-primary:hover,
+      body .booked-list-view button.button:hover,
+      body .booked-list-view input[type="submit"].button-primary:hover,
+      body table.booked-calendar input[type="submit"].button-primary:hover,
+      body .booked-modal input[type="submit"].button-primary:hover,
+      body table.booked-calendar th,
+      body table.booked-calendar thead,
+      body table.booked-calendar thead th,
+      body
+        table.booked-calendar
+        .booked-appt-list
+        .timeslot
+        .timeslot-people
+        button:hover,
+      body #booked-profile-page .booked-profile-header,
+      body #booked-profile-page .booked-tabs li.active a,
+      body #booked-profile-page .booked-tabs li.active a:hover,
+      body #booked-profile-page .appt-block .google-cal-button > a:hover,
+      #ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header {
+        background: #3813c2 !important;
+      }
+
+      body #booked-profile-page input[type="submit"].button-primary:hover,
+      body table.booked-calendar input[type="submit"].button-primary:hover,
+      body .booked-list-view button.button:hover,
+      body .booked-list-view input[type="submit"].button-primary:hover,
+      body .booked-modal input[type="submit"].button-primary:hover,
+      body table.booked-calendar th,
+      body
+        table.booked-calendar
+        .booked-appt-list
+        .timeslot
+        .timeslot-people
+        button:hover,
+      body #booked-profile-page .booked-profile-header,
+      body #booked-profile-page .appt-block .google-cal-button > a:hover {
+        border-color: #3813c2 !important;
+      }
+
+      body table.booked-calendar tr.days,
+      body table.booked-calendar tr.days th,
+      body .booked-calendarSwitcher.calendar,
+      body #booked-profile-page .booked-tabs,
+      #ui-datepicker-div.booked_custom_date_picker
+        table.ui-datepicker-calendar
+        thead,
+      #ui-datepicker-div.booked_custom_date_picker
+        table.ui-datepicker-calendar
+        thead
+        th {
+        background: #f20487 !important;
+      }
+
+      body table.booked-calendar tr.days th,
+      body #booked-profile-page .booked-tabs {
+        border-color: #f20487 !important;
+      }
+
+      #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-today a,
+    #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-today a:hover,
+    body #booked-profile-page input[type=submit].button-primary,
+    body table.booked-calendar input[type=submit].button-primary,
+    body .booked-list-view button.button,
+    body .booked-list-view input[type=submit].button-primary,
+    body .booked-list-view button.button,
+    body .booked-list-view input[type=submit].button-primary,
+    body .booked-modal input[type=submit].button-primary,
+    body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,
+    body #booked-profile-page .booked-profile-appt-list .appt-block.approved .status-block,
+    body #booked-profile-page .appt-block .google-cal-button>a,
+    body .booked-modal p.booked-title-bar,
+    body table.booked-calendar td:hover .date span,
+    body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active,
+    body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active:hover,
+    .booked-ms-modal .booked-book-appt
+
+    /* Multi-Slot Booking */ {
+        background: #3813c2;
+      }
+
+      body #booked-profile-page input[type="submit"].button-primary,
+      body table.booked-calendar input[type="submit"].button-primary,
+      body .booked-list-view button.button,
+      body .booked-list-view input[type="submit"].button-primary,
+      body .booked-list-view button.button,
+      body .booked-list-view input[type="submit"].button-primary,
+      body .booked-modal input[type="submit"].button-primary,
+      body #booked-profile-page .appt-block .google-cal-button > a,
+      body
+        table.booked-calendar
+        .booked-appt-list
+        .timeslot
+        .timeslot-people
+        button,
+      body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active,
+      body
+        .booked-list-view
+        a.booked_list_date_picker_trigger.booked-dp-active:hover {
+        border-color: #3813c2;
+      }
+
+      body .booked-modal .bm-window p i.fa,
+      body .booked-modal .bm-window a,
+      body .booked-appt-list .booked-public-appointment-title,
+      body .booked-modal .bm-window p.appointment-title,
+      .booked-ms-modal.visible:hover .booked-book-appt {
+        color: #3813c2;
+      }
+
+      .booked-appt-list .timeslot.has-title .booked-public-appointment-title {
+        color: inherit;
+      }
+    </style>
+    <style id="vamtam-theme-options">
+      :root {
+        --vamtam-site-max-width: 1260px;
+        --vamtam-body-background-background-image: none;
+        --vamtam-body-background-background-color: #ffffff;
+        --vamtam-body-background-background-repeat: no-repeat;
+        --vamtam-body-background-background-attachment: scroll;
+        --vamtam-body-background-background-size: cover;
+        --vamtam-body-background-background-position: center center;
+        --vamtam-accent-color-1: #3813c2;
+        --vamtam-accent-color-2: #0088ce;
+        --vamtam-accent-color-3: #06163a;
+        --vamtam-accent-color-4: #d8d8d8;
+        --vamtam-accent-color-5: #ffffff;
+        --vamtam-accent-color-6: #000000;
+        --vamtam-accent-color-7: #dfdfdf;
+        --vamtam-accent-color-8: #ffffff;
+        --vamtam-accent-color-1-hc: #ffffff;
+        --vamtam-accent-color-2-hc: #ffffff;
+        --vamtam-accent-color-3-hc: #ffffff;
+        --vamtam-accent-color-4-hc: #000000;
+        --vamtam-accent-color-5-hc: #000000;
+        --vamtam-accent-color-6-hc: #ffffff;
+        --vamtam-accent-color-7-hc: #000000;
+        --vamtam-accent-color-8-hc: #000000;
+        --vamtam-h1-font-family: "Roboto";
+        --vamtam-h1-font-size: 52px;
+        --vamtam-h1-font-weight: bold;
+        --vamtam-h1-font-style: normal;
+        --vamtam-h1-line-height: 1.12;
+        --vamtam-h1-color: #000000;
+        --vamtam-h2-font-family: "Roboto";
+        --vamtam-h2-font-size: 40px;
+        --vamtam-h2-font-weight: bold;
+        --vamtam-h2-font-style: normal;
+        --vamtam-h2-line-height: 1.35;
+        --vamtam-h2-color: #091427;
+        --vamtam-h3-font-family: "Roboto";
+        --vamtam-h3-font-size: 28px;
+        --vamtam-h3-font-weight: 500;
+        --vamtam-h3-font-style: normal;
+        --vamtam-h3-line-height: 1.21;
+        --vamtam-h3-color: #121559;
+        --vamtam-h4-font-family: "Roboto";
+        --vamtam-h4-font-size: 22px;
+        --vamtam-h4-font-weight: 500;
+        --vamtam-h4-font-style: normal;
+        --vamtam-h4-line-height: 1.27;
+        --vamtam-h4-color: #121559;
+        --vamtam-h5-font-family: "Roboto";
+        --vamtam-h5-font-size: 16px;
+        --vamtam-h5-font-weight: normal;
+        --vamtam-h5-font-style: normal;
+        --vamtam-h5-line-height: 1.5;
+        --vamtam-h5-color: #121559;
+        --vamtam-h6-font-family: "Roboto";
+        --vamtam-h6-font-size: 12px;
+        --vamtam-h6-font-weight: normal;
+        --vamtam-h6-font-style: normal;
+        --vamtam-h6-line-height: 1.17;
+        --vamtam-h6-color: #121559;
+        --vamtam-em-font-family: "Roboto";
+        --vamtam-em-font-size: 16px;
+        --vamtam-em-font-weight: normal;
+        --vamtam-em-font-style: italic;
+        --vamtam-em-line-height: 1.63;
+        --vamtam-em-color: #3f485d;
+        --vamtam-additional-font-1-font-family: "Rubik";
+        --vamtam-additional-font-1-font-size: 90px;
+        --vamtam-additional-font-1-font-weight: 300;
+        --vamtam-additional-font-1-font-style: normal;
+        --vamtam-additional-font-1-line-height: 0.89;
+        --vamtam-additional-font-1-color: #3813c2;
+        --vamtam-additional-font-2-font-family: "Rubik";
+        --vamtam-additional-font-2-font-size: 70px;
+        --vamtam-additional-font-2-font-weight: bold;
+        --vamtam-additional-font-2-font-style: normal;
+        --vamtam-additional-font-2-line-height: 1;
+        --vamtam-additional-font-2-color: #3813c2;
+        --vamtam-header-height: 70px;
+        --vamtam-header-background-background-image: none;
+        --vamtam-header-background-background-color: #ffffff;
+        --vamtam-header-background-background-repeat: repeat;
+        --vamtam-header-background-background-attachment: scroll;
+        --vamtam-header-background-background-size: auto;
+        --vamtam-header-background-background-position: left top;
+        --vamtam-sub-header-background-background-image: none;
+        --vamtam-sub-header-background-background-color: #e2e2e2;
+        --vamtam-sub-header-background-background-repeat: repeat;
+        --vamtam-sub-header-background-background-attachment: fixed;
+        --vamtam-sub-header-background-background-size: auto;
+        --vamtam-sub-header-background-background-position: left top;
+        --vamtam-page-title-background-background-image: none;
+        --vamtam-page-title-background-background-color: ;
+        --vamtam-page-title-background-background-repeat: repeat;
+        --vamtam-page-title-background-background-attachment: fixed;
+        --vamtam-page-title-background-background-size: auto;
+        --vamtam-page-title-background-background-position: left top;
+        --vamtam-logo-font-family: "Roboto";
+        --vamtam-logo-font-size: 22px;
+        --vamtam-logo-font-weight: bold;
+        --vamtam-logo-font-style: normal;
+        --vamtam-logo-line-height: 0.91;
+        --vamtam-logo-color: #3813c2;
+        --vamtam-main-menu-text-sticky-color: #ffffff;
+        --vamtam-left-sidebar-width: 30%;
+        --vamtam-right-sidebar-width: 30%;
+        --vamtam-main-background-background-image: none;
+        --vamtam-main-background-background-color: #ffffff;
+        --vamtam-main-background-background-repeat: repeat;
+        --vamtam-main-background-background-attachment: scroll;
+        --vamtam-main-background-background-size: auto;
+        --vamtam-main-background-background-position: left top;
+        --vamtam-primary-font-font-family: "Roboto";
+        --vamtam-primary-font-font-size: 16px;
+        --vamtam-primary-font-font-weight: normal;
+        --vamtam-primary-font-font-style: normal;
+        --vamtam-primary-font-line-height: 1.63;
+        --vamtam-primary-font-color: #4f4f50;
+        --vamtam-body-link-regular: #000000;
+        --vamtam-body-link-hover: #f20487;
+        --vamtam-body-link-visited: #000000;
+        --vamtam-body-link-active: #3813c2;
+        --vamtam-footer-sidebars-titles-font-family: "Rubik";
+        --vamtam-footer-sidebars-titles-font-size: 20px;
+        --vamtam-footer-sidebars-titles-font-weight: 500;
+        --vamtam-footer-sidebars-titles-font-style: normal;
+        --vamtam-footer-sidebars-titles-line-height: 1.2;
+        --vamtam-footer-sidebars-titles-color: #1f1957;
+        --vamtam-footer-sidebars-titles-letter-spacing: normal;
+        --vamtam-mobile-top-bar-resolution: 900px;
+        --vamtam-beaver-global-row_margins: 0px;
+        --vamtam-beaver-global-row_margins_unit: px;
+        --vamtam-beaver-global-row_margins_medium_unit: px;
+        --vamtam-beaver-global-row_margins_responsive_unit: px;
+        --vamtam-beaver-global-row_padding: 20px;
+        --vamtam-beaver-global-row_padding_unit: px;
+        --vamtam-beaver-global-row_padding_medium_unit: px;
+        --vamtam-beaver-global-row_padding_responsive: 10px;
+        --vamtam-beaver-global-row_padding_responsive_unit: px;
+        --vamtam-beaver-global-row_content_width_default: fixed;
+        --vamtam-beaver-global-column_margins: 0px;
+        --vamtam-beaver-global-column_margins_unit: px;
+        --vamtam-beaver-global-column_margins_medium_unit: px;
+        --vamtam-beaver-global-column_margins_responsive_unit: px;
+        --vamtam-beaver-global-column_padding: 0px;
+        --vamtam-beaver-global-column_padding_unit: px;
+        --vamtam-beaver-global-column_padding_medium_unit: px;
+        --vamtam-beaver-global-column_padding_responsive_unit: px;
+        --vamtam-beaver-global-module_margins: 10px;
+        --vamtam-beaver-global-module_margins_unit: px;
+        --vamtam-beaver-global-module_margins_medium_unit: px;
+        --vamtam-beaver-global-module_margins_responsive_unit: px;
+        --vamtam-beaver-global-responsive_enabled: 1;
+        --vamtam-beaver-global-auto_spacing: 1;
+        --vamtam-beaver-global-medium_breakpoint: 992;
+        --vamtam-beaver-global-responsive_breakpoint: 768;
+        --vamtam-beaver-global-responsive_preview: ;
+        --vamtam-beaver-global-responsive_col_max_width: 1px;
+        --vamtam-beaver-global-responsive_base_fontsize: 16px;
+        --vamtam-beaver-global-row_width: 1280px;
+        --vamtam-beaver-global-row_width_unit: px;
+        --vamtam-beaver-global-show_default_heading: ;
+        --vamtam-default-bg-color: #ffffff;
+        --vamtam-default-line-color: #dfdfdf;
+        --vamtam-small-padding: 20px;
+        --vamtam-horizontal-padding: 50px;
+        --vamtam-vertical-padding: 30px;
+        --vamtam-horizontal-padding-large: 60px;
+        --vamtam-vertical-padding-large: 60px;
+        --vamtam-no-border-link: none;
+        --vamtam-border-radius: 0px;
+        --vamtam-border-radius-oval: 0px;
+        --vamtam-overlay-color: #000000;
+        --vamtam-overlay-color-hc: #ffffff;
+        --vamtam-box-outer-padding: 60px;
+        --vamtam-loading-animation: url("http://mqixntn.cluster031.hosting.ovh.net/wp-content/themes/mann/vamtam/assets/images/loader-ring.gif");
+        --vamtam-accent-color-1-rgb: 56, 19, 194;
+        --vamtam-accent-color-2-rgb: 0, 136, 206;
+        --vamtam-accent-color-3-rgb: 6, 22, 58;
+        --vamtam-accent-color-4-rgb: 216, 216, 216;
+        --vamtam-accent-color-5-rgb: 255, 255, 255;
+        --vamtam-accent-color-6-rgb: 0, 0, 0;
+        --vamtam-accent-color-7-rgb: 223, 223, 223;
+        --vamtam-accent-color-8-rgb: 255, 255, 255;
+      }
+    </style>
+    <style>
+      [class*="gallery-columns-"].gallery-columns-5 .gallery-item {
+        width: 19% !important;
+      }
+    </style>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//s.w.org" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Virtual Student Orientation &raquo; Flux"
+      href="http://mqixntn.cluster031.hosting.ovh.net/index.php/feed/"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Virtual Student Orientation &raquo; Flux des commentaires"
+      href="http://mqixntn.cluster031.hosting.ovh.net/index.php/comments/feed/"
+    />
+    <link
+      rel="alternate"
+      type="text/calendar"
+      title="Virtual Student Orientation &raquo; Flux iCal"
+      href="http://mqixntn.cluster031.hosting.ovh.net/index.php/events/?ical=1"
+    />
+    <script type="text/javascript">
+      window._wpemojiSettings = {
+        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/",
+        ext: ".png",
+        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/",
+        svgExt: ".svg",
+        source: {
+          concatemoji:
+            "http:\/\/mqixntn.cluster031.hosting.ovh.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8",
+        },
+      }
+      !(function (e, a, t) {
+        var n,
+          r,
+          o,
+          i = a.createElement("canvas"),
+          p = i.getContext && i.getContext("2d")
+
+        function s(e, t) {
+          var a = String.fromCharCode
+          p.clearRect(0, 0, i.width, i.height),
+            p.fillText(a.apply(this, e), 0, 0)
+          e = i.toDataURL()
+          return (
+            p.clearRect(0, 0, i.width, i.height),
+            p.fillText(a.apply(this, t), 0, 0),
+            e === i.toDataURL()
+          )
+        }
+
+        function c(e) {
+          var t = a.createElement("script")
+          ;(t.src = e),
+            (t.defer = t.type = "text/javascript"),
+            a.getElementsByTagName("head")[0].appendChild(t)
+        }
+
+        for (
+          o = Array("flag", "emoji"),
+            t.supports = { everything: !0, everythingExceptFlag: !0 },
+            r = 0;
+          r < o.length;
+          r++
+        )
+          (t.supports[o[r]] = (function (e) {
+            if (!p || !p.fillText) return !1
+            switch (
+              ((p.textBaseline = "top"), (p.font = "600 32px Arial"), e)
+            ) {
+              case "flag":
+                return s(
+                  [127987, 65039, 8205, 9895, 65039],
+                  [127987, 65039, 8203, 9895, 65039]
+                )
+                  ? !1
+                  : !s(
+                      [55356, 56826, 55356, 56819],
+                      [55356, 56826, 8203, 55356, 56819]
+                    ) &&
+                      !s(
+                        [
+                          55356, 57332, 56128, 56423, 56128, 56418, 56128,
+                          56421, 56128, 56430, 56128, 56423, 56128, 56447,
+                        ],
+                        [
+                          55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418,
+                          8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128,
+                          56423, 8203, 56128, 56447,
+                        ]
+                      )
+              case "emoji":
+                return !s(
+                  [10084, 65039, 8205, 55357, 56613],
+                  [10084, 65039, 8203, 55357, 56613]
+                )
+            }
+            return !1
+          })(o[r])),
+            (t.supports.everything = t.supports.everything && t.supports[o[r]]),
+            "flag" !== o[r] &&
+              (t.supports.everythingExceptFlag =
+                t.supports.everythingExceptFlag && t.supports[o[r]])
+        ;(t.supports.everythingExceptFlag =
+          t.supports.everythingExceptFlag && !t.supports.flag),
+          (t.DOMReady = !1),
+          (t.readyCallback = function () {
+            t.DOMReady = !0
+          }),
+          t.supports.everything ||
+            ((n = function () {
+              t.readyCallback()
+            }),
+            a.addEventListener
+              ? (a.addEventListener("DOMContentLoaded", n, !1),
+                e.addEventListener("load", n, !1))
+              : (e.attachEvent("onload", n),
+                a.attachEvent("onreadystatechange", function () {
+                  "complete" === a.readyState && t.readyCallback()
+                })),
+            (n = t.source || {}).concatemoji
+              ? c(n.concatemoji)
+              : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)))
+      })(window, document, window._wpemojiSettings)
+    </script>
+    <style type="text/css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="sb_instagram_styles-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=2.9.2"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-includes/css/dist/block-library/style.min.css?ver=5.8"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wc-block-vendors-style-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css?ver=5.3.3"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wc-block-style-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=5.3.3"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="fl-builder-layout-11419-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/bb-plugin/cache/11419-layout.css?ver=e948d2a96434b810ab8ce46194387bfb"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="booked-icons-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/booked/assets/css/icons.css?ver=2.3.5"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="booked-tooltipster-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/booked/assets/js/tooltipster/css/tooltipster.css?ver=3.3.0"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="booked-tooltipster-theme-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/booked/assets/js/tooltipster/css/themes/tooltipster-light.css?ver=3.3.0"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="booked-animations-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/booked/assets/css/animations.css?ver=2.3.5"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="booked-css-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/booked/dist/booked.css?ver=2.3.5"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="woocommerce-layout-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=5.5.2"
+      type="text/css"
+      media="all"
+    />
+    <style id="woocommerce-layout-inline-css" type="text/css">
+      .infinite-scroll .woocommerce-pagination {
+        display: none;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="woocommerce-smallscreen-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=5.5.2"
+      type="text/css"
+      media="only screen and (max-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      id="woocommerce-general-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=5.5.2"
+      type="text/css"
+      media="all"
+    />
+    <style id="woocommerce-inline-inline-css" type="text/css">
+      .woocommerce form .form-row .required {
+        visibility: visible;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="dashicons-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-includes/css/dashicons.min.css?ver=5.8"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="booked-wc-fe-styles-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/booked/includes/add-ons/woocommerce-payments//css/frontend-style.css?ver=5.8"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="vamtam-gfonts-css"
+      href="https://fonts.googleapis.com/css?family=Roboto%3Abold%2C500%2Cnormal%2Citalic%2C700i%7CRubik%3A300%2Cbold%2C500&#038;subset=latin&#038;display=swap&#038;ver=1628062783"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="vamtam-front-all-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/themes/mann/vamtam/assets/css/dist/all.css?ver=1628062783"
+      type="text/css"
+      media="all"
+    />
+    <style id="vamtam-front-all-inline-css" type="text/css">
+      @font-face {
+        font-family: "icomoon";
+        src: url(/landing/assets/fonts/icons/icomoon.woff2) format("woff2"),
+          url(/landing/assets/fonts/icons/icomoon.woff) format("woff"),
+          url(/landing/assets/fonts/icons/icomoon.ttf) format("ttf");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "theme";
+        src: url(/landing/assets/fonts/theme-icons/theme-icons.woff2)
+            format("woff2"),
+          url(/landing/assets/fonts/theme-icons/theme-icons.woff) format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* Make Beaver options play nice with the theme */
+
+      .vamtam-box-outer-padding,
+      .limit-wrapper,
+      .header-padding {
+        padding-left: calc(
+          var(--vamtam-box-outer-padding) +
+            var(
+              --vamtam-block-margin-desktop-left,
+              var(--vamtam-beaver-global-module_margins)
+            )
+        );
+        padding-right: calc(
+          var(--vamtam-box-outer-padding) +
+            var(
+              --vamtam-block-margin-desktop-right,
+              var(--vamtam-beaver-global-module_margins)
+            )
+        );
+      }
+
+      body:not(.single-tribe_events):not(.post-type-archive).fl-builder
+        #main
+        > .limit-wrapper,
+      body .fl-row-content-wrap {
+        padding-left: var(--vamtam-box-outer-padding);
+        padding-right: var(--vamtam-box-outer-padding);
+      }
+
+      body:not(.single-tribe_events):not(.post-type-archive).fl-builder
+        #main
+        > .limit-wrapper {
+        max-width: calc(
+          var(--vamtam-site-max-width) + 2 *
+            var(--vamtam-beaver-global-module_margins)
+        );
+      }
+
+      .vamtam-box-outer-padding .vamtam-box-outer-padding,
+      body .vamtam-box-outer-padding .fl-row-content-wrap,
+      .limit-wrapper .limit-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      body .post-content .fl-row-full-width .fl-row-fixed-width {
+        padding-left: calc(
+          20px +
+            var(
+              --vamtam-block-margin-desktop-left,
+              var(--vamtam-beaver-global-module_margins)
+            )
+        );
+        padding-right: calc(
+          20px +
+            var(
+              --vamtam-block-margin-desktop-right,
+              var(--vamtam-beaver-global-module_margins)
+            )
+        );
+      }
+
+      @media (max-width: 1460px) {
+        .post-siblings {
+          display: none;
+        }
+      }
+
+      @media (min-width: 993px) and (max-width: 1260px) {
+        .vamtam-box-outer-padding,
+        .limit-wrapper,
+        .header-padding {
+          padding-left: calc(
+            30px +
+              var(
+                --vamtam-block-margin-desktop-left,
+                var(--vamtam-beaver-global-module_margins)
+              )
+          );
+          padding-right: calc(
+            30px +
+              var(
+                --vamtam-block-margin-desktop-right,
+                var(--vamtam-beaver-global-module_margins)
+              )
+          );
+        }
+
+        body:not(.single-tribe_events):not(.post-type-archive).fl-builder
+          #main
+          > .limit-wrapper,
+        body .fl-row-content-wrap {
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+
+        body .post-content .fl-row-full-width .fl-row-fixed-width {
+          padding-left: calc(20px + var(--vamtam-beaver-global-module_margins));
+          padding-right: calc(
+            20px + var(--vamtam-beaver-global-module_margins)
+          );
+        }
+
+        body.single-post .post-content .fl-row-fixed-width {
+          max-width: 840px;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .vamtam-box-outer-padding,
+        .limit-wrapper,
+        .header-padding {
+          padding-left: calc(
+            20px +
+              var(
+                --vamtam-block-margin-tablet-left,
+                var(--vamtam-beaver-global-module_margins)
+              )
+          );
+          padding-right: calc(
+            20px +
+              var(
+                --vamtam-block-margin-tablet-right,
+                var(--vamtam-beaver-global-module_margins)
+              )
+          );
+        }
+
+        body:not(.single-tribe_events):not(.post-type-archive).fl-builder
+          #main
+          > .limit-wrapper,
+        body .fl-row-content-wrap {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        body .post-content .fl-row-full-width .fl-row-fixed-width {
+          padding-left: calc(10px + var(--vamtam-beaver-global-module_margins));
+          padding-right: calc(
+            10px + var(--vamtam-beaver-global-module_margins)
+          );
+        }
+
+        body:not(.single-tribe_events):not(.post-type-archive).fl-builder
+          #main:not(.layout-full)
+          .limit-wrapper {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        body .post-content .fl-row-full-width .fl-row-fixed-width,
+        body
+          #main:not(.layout-full)
+          .fl-builder-content
+          > .fl-row-full-width
+          .fl-row-fixed-width,
+        body
+          #main:not(.layout-full)
+          .fl-builder-content
+          > .fl-row-full-width
+          .fl-row-full-width,
+        body #main:not(.layout-full) .fl-builder-content > .fl-row-fixed-width {
+          padding-left: calc(
+            10px +
+              var(
+                --vamtam-block-margin-tablet-left,
+                var(--vamtam-beaver-global-module_margins)
+              )
+          );
+          padding-right: calc(
+            10px +
+              var(
+                --vamtam-block-margin-tablet-right,
+                var(--vamtam-beaver-global-module_margins)
+              )
+          );
+        }
+      }
+
+      @media (max-width: 768px) {
+        .vamtam-box-outer-padding,
+        .limit-wrapper,
+        .header-padding {
+          padding-left: calc(
+            10px +
+              var(
+                --vamtam-block-margin-phone-left,
+                var(--vamtam-beaver-global-module_margins)
+              )
+          );
+          padding-right: calc(
+            10px +
+              var(
+                --vamtam-block-margin-phone-right,
+                var(--vamtam-beaver-global-module_margins)
+              )
+          );
+        }
+
+        body
+          #main:not(.layout-full)
+          .fl-builder-content
+          > .fl-row-full-width
+          .fl-row-fixed-width,
+        body
+          #main:not(.layout-full)
+          .fl-builder-content
+          > .fl-row-full-width
+          .fl-row-full-width,
+        body #main:not(.layout-full) .fl-builder-content > .fl-row-fixed-width {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      :root {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="vamtam-theme-mobile-header-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/themes/mann/vamtam/assets/css/dist/responsive/mobile-header.css?ver=1628062783"
+      type="text/css"
+      media="(max-width: 900px)"
+    />
+    <link
+      rel="stylesheet"
+      id="vamtam-theme-layout-max-low-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/themes/mann/vamtam/assets/css/dist/responsive/layout-max-low.css?ver=1628062783"
+      type="text/css"
+      media="(min-width: 993px) and (max-width: 1260px)"
+    />
+    <link
+      rel="stylesheet"
+      id="vamtam-theme-layout-max-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/themes/mann/vamtam/assets/css/dist/responsive/layout-max.css?ver=1628062783"
+      type="text/css"
+      media="(min-width: 993px)"
+    />
+    <link
+      rel="stylesheet"
+      id="vamtam-theme-layout-below-max-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/themes/mann/vamtam/assets/css/dist/responsive/layout-below-max.css?ver=1628062783"
+      type="text/css"
+      media="(max-width: 992px)"
+    />
+    <link
+      rel="stylesheet"
+      id="vamtam-theme-layout-small-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/themes/mann/vamtam/assets/css/dist/responsive/layout-small.css?ver=1628062783"
+      type="text/css"
+      media="(max-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      id="vamtam-theme-wc-small-screen-css"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/themes/mann/vamtam/assets/css/dist/responsive/wc-small-screen.css?ver=1628062783"
+      type="text/css"
+      media="only screen and (max-width: 768px)"
+    />
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-includes/js/jquery/jquery.min.js?ver=3.6.0"
+      id="jquery-core-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2"
+      id="jquery-migrate-js"
+    ></script>
+    <script type="text/javascript" id="booked-wc-fe-functions-js-extra">
+      /* <![CDATA[ */
+      var booked_wc_variables = {
+        prefix: "booked_wc_",
+        ajaxurl:
+          "http:\/\/mqixntn.cluster031.hosting.ovh.net\/wp-admin\/admin-ajax.php",
+        i18n_confirm_appt_edit:
+          "Are you sure you want to change the appointment date? By doing so, the appointment date will need to be approved again.",
+        i18n_pay:
+          "Are you sure you want to add the appointment to cart and go to checkout?",
+        i18n_mark_paid:
+          'Are you sure you want to mark this appointment as "Paid"?',
+        i18n_paid: "Paid",
+        i18n_awaiting_payment: "Awaiting Payment",
+        checkout_page:
+          "http:\/\/mqixntn.cluster031.hosting.ovh.net\/?page_id=13253",
+      }
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/booked/includes/add-ons/woocommerce-payments//js/frontend-functions.js?ver=5.8"
+      id="booked-wc-fe-functions-js"
+    ></script>
+    <link
+      rel="https://api.w.org/"
+      href="http://mqixntn.cluster031.hosting.ovh.net/index.php/wp-json/"
+    />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="http://mqixntn.cluster031.hosting.ovh.net/index.php/wp-json/wp/v2/pages/11419"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="http://mqixntn.cluster031.hosting.ovh.net/xmlrpc.php?rsd"
+    />
+    <link
+      rel="wlwmanifest"
+      type="application/wlwmanifest+xml"
+      href="http://mqixntn.cluster031.hosting.ovh.net/wp-includes/wlwmanifest.xml"
+    />
+    <meta name="generator" content="WordPress 5.8" />
+    <meta name="generator" content="WooCommerce 5.5.2" />
+    <link rel="canonical" href="http://mqixntn.cluster031.hosting.ovh.net/" />
+    <link rel="shortlink" href="http://mqixntn.cluster031.hosting.ovh.net/" />
+    <link
+      rel="alternate"
+      type="application/json+oembed"
+      href="http://mqixntn.cluster031.hosting.ovh.net/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmqixntn.cluster031.hosting.ovh.net%2F"
+    />
+    <link
+      rel="alternate"
+      type="text/xml+oembed"
+      href="http://mqixntn.cluster031.hosting.ovh.net/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmqixntn.cluster031.hosting.ovh.net%2F&#038;format=xml"
+    />
+    <meta name="tec-api-version" content="v1" />
+    <meta
+      name="tec-api-origin"
+      content="http://mqixntn.cluster031.hosting.ovh.net"
+    />
+    <link
+      rel="https://theeventscalendar.com/"
+      href="http://mqixntn.cluster031.hosting.ovh.net/index.php/wp-json/tribe/events/v1/"
+    />
+    <noscript>
+      <style>
+        .woocommerce-product-gallery {
+          opacity: 1 !important;
+        }
+      </style>
+    </noscript>
+    <meta
+      name="generator"
+      content="Powered by Slider Revolution 6.5.4 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."
+    />
+
+    <!-- Jetpack Open Graph Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Virtual Student Orientation" />
+    <meta property="og:description" content="Testing Version" />
+    <meta
+      property="og:url"
+      content="http://mqixntn.cluster031.hosting.ovh.net/"
+    />
+    <meta property="og:site_name" content="Virtual Student Orientation" />
+    <meta
+      property="og:image"
+      content="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Press-Release-Dr.-Ahmad-M.-Hasnah-President-of-HBKU-speaking-at-Orientation-2017-150x150.jpg"
+    />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:text:title" content="Home" />
+    <meta
+      name="twitter:image"
+      content="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Press-Release-Dr.-Ahmad-M.-Hasnah-President-of-HBKU-speaking-at-Orientation-2017-150x150.jpg?w=1400"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- End Jetpack Open Graph Tags -->
+    <script type="text/javascript">
+      function setREVStartSize(e) {
+        //window.requestAnimationFrame(function() {
+        window.RSIW =
+          window.RSIW === undefined ? window.innerWidth : window.RSIW
+        window.RSIH =
+          window.RSIH === undefined ? window.innerHeight : window.RSIH
+        try {
+          var pw = document.getElementById(e.c).parentNode.offsetWidth,
+            newh
+          pw = pw === 0 || isNaN(pw) ? window.RSIW : pw
+          e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw)
+          e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw)
+          e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh)
+          e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh)
+          e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide)
+          e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide)
+          e.mh =
+            e.mh === undefined || e.mh == "" || e.mh === "auto"
+              ? 0
+              : parseInt(e.mh, 0)
+          if (e.layout === "fullscreen" || e.l === "fullscreen")
+            newh = Math.max(e.mh, window.RSIH)
+          else {
+            e.gw = Array.isArray(e.gw) ? e.gw : [e.gw]
+            for (var i in e.rl)
+              if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1]
+            e.gh =
+              e.el === undefined ||
+              e.el === "" ||
+              (Array.isArray(e.el) && e.el.length == 0)
+                ? e.gh
+                : e.el
+            e.gh = Array.isArray(e.gh) ? e.gh : [e.gh]
+            for (var i in e.rl)
+              if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1]
+
+            var nl = new Array(e.rl.length),
+              ix = 0,
+              sl
+            e.tabw = e.tabhide >= pw ? 0 : e.tabw
+            e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw
+            e.tabh = e.tabhide >= pw ? 0 : e.tabh
+            e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh
+            for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i]
+            sl = nl[0]
+            for (var i in nl)
+              if (sl > nl[i] && nl[i] > 0) {
+                sl = nl[i]
+                ix = i
+              }
+            var m =
+              pw > e.gw[ix] + e.tabw + e.thumbw
+                ? 1
+                : (pw - (e.tabw + e.thumbw)) / e.gw[ix]
+            newh = e.gh[ix] * m + (e.tabh + e.thumbh)
+          }
+          var el = document.getElementById(e.c)
+          if (el !== null && el) el.style.height = newh + "px"
+          el = document.getElementById(e.c + "_wrapper")
+          if (el !== null && el) el.style.height = newh + "px"
+        } catch (e) {
+          console.log("Failure at Presize of Slider:" + e)
+        }
+        //});
+      }
+    </script>
+    <style type="text/css" id="wp-custom-css">
+      .vamtam-buble .fl-module-content {
+        box-shadow: 0px 5px 20px 0px #efefef;
+        border-radius: 30em;
+        width: 90px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="/landing/assets/css/mega.css"
+      type="text/css"
+    />
+
+    <style type="text/css">
+      .jp-carousel-info {
+        display: none !important;
+      }
+    </style>
+  </head>
+
+  <body
+    class="
+      home
+      page-template-default page page-id-11419
+      wp-custom-logo wp-embed-responsive
+      theme-mann
+      fl-builder
+      woocommerce-no-js
+      tribe-no-js
+      mega-menu-menu-header
+      full
+      header-layout-logo-menu
+      pagination-load-more
+      sticky-header-type-over
+      no-page-header no-middle-header
+      has-header-slider
+      responsive-layout
+      sticky-header
+      layout-full
+    "
+  >
+    <div id="top"></div>
+    <div class="fixed-header-box sticky-header-state-reset" style="height: 0">
+      <header
+        class="
+          main-header
+          layout-logo-menu layout-single-row
+          header-content-wrapper header-background
+        "
+      >
+        <div class="limit-wrapper header-maybe-limit-wrapper header-padding">
+          <div class="header-contents">
+            <div class="first-row">
+              <div class="logo-wrapper">
+                <div class="logo-tagline">
+                  <img
+                    src="/static/media/logo_hbku_transparent.png"
+                    style="padding-top: 34px"
+                  />
+                </div>
+
+                <div class="mobile-logo-additions">
+                  <button
+                    class="header-search icon vamtam-overlay-search-trigger"
+                  >
+                    &#59752;
+                  </button>
+                  <div id="vamtam-megamenu-main-menu-toggle"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="second-row">
+              <div id="menus">
+                <nav id="main-menu" class="">
+                  <a href="#main" title="Skip to content" class="visuallyhidden"
+                    >Skip to content</a
+                  >
+                </nav>
+              </div>
+            </div>
+
+            <div class="cart-dropdown vamtam-header-cart-wrapper hidden">
+              <div class="cart-dropdown-inner">
+                <a
+                  class="vamtam-cart-dropdown-link"
+                  href="http://mqixntn.cluster031.hosting.ovh.net/?page_id=13252"
+                >
+                  <span class="icon theme">&#59751;</span>
+                  <span class="products cart-empty">...</span>
+                </a>
+                <div class="widget woocommerce widget_shopping_cart">
+                  <div class="widget_shopping_cart_content"></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="header-text">
+              <div>
+                <link
+                  rel="stylesheet"
+                  id="jetpack-carousel-swiper-css-css"
+                  href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/jetpack/modules/carousel/swiper-bundle.css?ver=10.0"
+                  type="text/css"
+                  media="all"
+                />
+                <link
+                  rel="stylesheet"
+                  id="jetpack-carousel-css"
+                  href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/jetpack/modules/carousel/jetpack-carousel.css?ver=10.0"
+                  type="text/css"
+                  media="all"
+                />
+                <link
+                  rel="stylesheet"
+                  id="fl-builder-layout-13685-css"
+                  href="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/bb-plugin/cache/13685-layout-partial.css?ver=748bbeded9affc785f285e11bbb3620f"
+                  type="text/css"
+                  media="all"
+                />
+                <div
+                  class="
+                    fl-builder-content
+                    fl-builder-content-13685
+                    fl-builder-template
+                    fl-builder-row-template
+                    fl-builder-global-templates-locked
+                  "
+                  data-post-id="13685"
+                >
+                  <div
+                    class="
+                      fl-row
+                      fl-row-full-width
+                      fl-row-bg-none
+                      fl-node-59ac5fc591a6d
+                      fl-row-bg-attachment-scroll
+                    "
+                    data-node="59ac5fc591a6d"
+                  >
+                    <div class="fl-row-content-wrap">
+                      <div
+                        class="
+                          fl-row-content fl-row-fixed-width fl-node-content
+                        "
+                      >
+                        <div
+                          class="fl-col-group fl-node-59ac5fc59199b"
+                          data-node="59ac5fc59199b"
+                        >
+                          <div
+                            class="fl-col fl-node-59ac5fc5919ec"
+                            data-node="59ac5fc5919ec"
+                          >
+                            <div class="fl-col-content fl-node-content">
+                              <div
+                                class="
+                                  fl-module
+                                  fl-module-vamtam-button
+                                  fl-node-59ac5fc591a2e
+                                "
+                                data-node="59ac5fc591a2e"
+                              >
+                                <div class="fl-module-content fl-node-content">
+                                  <div
+                                    class="
+                                      vamtam-button-wrap
+                                      vamtam-button-width-auto
+                                    "
+                                    style="text-align: center"
+                                  >
+                                    <a
+                                      href="/programs"
+                                      target="_self"
+                                      class="
+                                        vamtam-button
+                                        accent1
+                                        hover-accent2
+                                        button-solid
+                                        icon-animation-disable
+                                      "
+                                      role="button"
+                                      style="
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        padding: 14px 28px;
+                                        background-color: #0088ce;
+                                        color: white;
+                                      "
+                                    >
+                                      <span class="vamtam-button-text">
+                                        Start your orientation now
+                                      </span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div id="page" class="main-container">
+      <header class="header-middle type-slider">
+        <div id="header-slider-container" class="revslider">
+          <div class="header-slider-wrapper">
+            <!-- START Video Presentation REVOLUTION SLIDER 6.5.4 -->
+            <p class="rs-p-wp-fix"></p>
+            <rs-module-wrap
+              id="rev_slider_5_1_wrapper"
+              data-source="gallery"
+              style="
+                visibility: hidden;
+                background: #140365;
+                padding: 0;
+                margin: 0px auto;
+                margin-top: 0;
+                margin-bottom: 0;
+              "
+            >
+              <rs-module
+                id="rev_slider_5_1"
+                class="rs-ov-hidden"
+                style=""
+                data-version="6.5.4"
+              >
+                <rs-slides>
+                  <rs-slide
+                    data-key="rs-10"
+                    data-title="Intro"
+                    data-duration="3000"
+                    data-in="y:-100%;"
+                    data-out="sx:0.85;sy:0.85;"
+                  >
+                    <img
+                      src="//mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                      title="Home"
+                      class="rev-slidebg tp-rs-img rs-lazyload"
+                      data-lazyload="//mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2018/07/Video-Slide-glow-bg.jpg"
+                      data-bg="p:right bottom;"
+                      data-no-retina
+                    />
+                    <!--
+							-->
+                    <rs-group
+                      id="slider-5-slide-10-layer-8"
+                      data-type="group"
+                      data-xy="x:c;y:m;yo:50px,50px,0,0;"
+                      data-text="l:22;a:inherit;"
+                      data-dim="w:400px;h:430px;"
+                      data-frame_0="sX:2;sY:2;"
+                      data-frame_0_mask="u:t;"
+                      data-frame_1="st:960;sp:2000;sR:960;"
+                      data-frame_1_mask="u:t;"
+                      data-frame_999="y:100%;sX:0.7;sY:0.7;rZ:0deg;st:w;sp:1000;sR:40;sA:3000;"
+                      data-frame_999_mask="u:t;"
+                      style="z-index: 10"
+                    >
+                      <rs-bg-elem
+                        style="position: absolute; top: 0px; left: 0px"
+                      ></rs-bg-elem>
+                      <!--
+								-->
+                      <rs-layer
+                        id="slider-5-slide-10-layer-2"
+                        data-type="image"
+                        data-rsp_ch="on"
+                        data-xy="x:c;y:b;yo:181px;"
+                        data-text="l:22;a:inherit;"
+                        data-dim="w:['182','182','182','182'];h:['182px','182px','182px','182px'];"
+                        data-frame_0="sX:0.9;sY:0.9;"
+                        data-frame_1="st:1880;sp:800;sR:920;"
+                        data-frame_999="st:w;sp:800;sR:320;auto:true;"
+                        style="z-index: 8"
+                      >
+                        <rs-bg-elem
+                          style="position: absolute; top: 0px; left: 0px"
+                        ></rs-bg-elem>
+                        <img
+                          src="//mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                          class="tp-rs-img rs-lazyload"
+                          width="502"
+                          height="501"
+                          data-lazyload="//mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/white.png"
+                          data-no-retina
+                        />
+                      </rs-layer>
+                      <!--
+							-->
+                    </rs-group>
+                    <!--
+-->
+                  </rs-slide>
+                  <rs-slide
+                    data-key="rs-16"
+                    data-title="Final - video"
+                    data-in="o:0;y:-100%;"
+                    data-out="sx:0.85;sy:0.85;"
+                  >
+                    <img
+                      src="//mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/revslider/public/assets/assets/dummy.png"
+                      alt="Final - video"
+                      title="Home"
+                      class="rev-slidebg tp-rs-img rs-lazyload"
+                      data-lazyload="//mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/revslider/public/assets/assets/transparent.png"
+                      data-bg="c:#170464;"
+                      data-no-retina
+                    />
+                    <!--
+							-->
+                    <rs-group
+                      id="slider-5-slide-16-layer-8"
+                      data-type="group"
+                      data-xy="x:c;y:m,m,m,b;yo:-20px,-20px,-30px,120px;"
+                      data-text="l:22;a:inherit;"
+                      data-dim="w:1000px,1000px,800px,470px;h:470px,470px,450px,360px;"
+                      data-frame_0="sX:2;sY:2;"
+                      data-frame_0_mask="u:t;"
+                      data-frame_1="st:440;sp:2000;sR:440;"
+                      data-frame_1_mask="u:t;"
+                      data-frame_999="y:100%;sX:0.7;sY:0.7;rZ:0deg;st:w;sp:1000;sR:1060;sA:3500;"
+                      data-frame_999_mask="u:t;"
+                      style="z-index: 15"
+                    >
+                      <rs-bg-elem
+                        style="position: absolute; top: 0px; left: 0px"
+                      ></rs-bg-elem>
+                      <!--
+								-->
+                      <rs-layer
+                        id="slider-5-slide-16-layer-4"
+                        class="tp-shape tp-shapewrapper"
+                        data-type="shape"
+                        data-rsp_ch="on"
+                        data-xy="x:c;y:b;yo:340px,340px,340px,250px;"
+                        data-text="a:inherit;"
+                        data-dim="w:481px,481px,280px,280px;h:70px;"
+                        data-frame_0="y:-100%;o:1;"
+                        data-frame_0_mask="u:t;"
+                        data-frame_1="st:990;sp:500;sR:550;"
+                        data-frame_1_mask="u:t;"
+                        data-frame_999="st:w;sp:800;sR:2010;auto:true;"
+                        data-frame_999_mask="u:t;"
+                        style="z-index: 11; background-color: #ffffff"
+                      >
+                        <rs-bg-elem
+                          style="position: absolute; top: 0px; left: 0px"
+                        ></rs-bg-elem>
+                      </rs-layer>
+                      <!--
+
+								-->
+                      <rs-layer
+                        id="slider-5-slide-16-layer-5"
+                        data-type="text"
+                        data-color="#121559"
+                        data-rsp_ch="on"
+                        data-xy="x:c;xo:1px,1px,1px,0;y:b;yo:340px,340px,340px,250px;"
+                        data-text="s:50;l:70;fw:900;a:center;"
+                        data-frame_0="o:1;"
+                        data-frame_0_chars="d:10;y:-100%;o:1;rX:0deg;"
+                        data-frame_0_mask="u:t;"
+                        data-frame_1="st:640;sp:1500;sR:200;"
+                        data-frame_1_chars="d:10;"
+                        data-frame_1_mask="u:t;"
+                        data-frame_999="st:w;sp:800;sR:-40;auto:true;"
+                        data-frame_999_mask="u:t;"
+                        style="
+                          z-index: 12;
+                          font-family: Roboto;
+                          text-transform: uppercase;
+                        "
+                      >
+                        <rs-bg-elem
+                          style="position: absolute; top: 0px; left: 0px"
+                        ></rs-bg-elem>
+                        VIRTUAL STUDENT
+                      </rs-layer>
+                      <!--
+
+								-->
+                      <rs-layer
+                        id="slider-5-slide-16-layer-10"
+                        data-type="text"
+                        data-rsp_ch="on"
+                        data-xy="x:c;y:b;yo:120px,120px,120px,90px;"
+                        data-text="s:150,150,200,114;l:220,220,220,160;fw:900;a:inherit;"
+                        data-frame_0="o:1;"
+                        data-frame_0_chars="d:5;y:100%;o:0;rX:0deg;"
+                        data-frame_0_mask="u:t;y:100%;"
+                        data-frame_1="e:power2.inOut;st:770;sp:2000;sR:330;"
+                        data-frame_1_chars="d:5;"
+                        data-frame_1_mask="u:t;"
+                        data-frame_999="st:w;sp:800;sR:180;auto:true;"
+                        style="z-index: 10; font-family: Roboto"
+                      >
+                        <rs-bg-elem
+                          style="position: absolute; top: 0px; left: 0px"
+                        ></rs-bg-elem>
+                        ORIENTATION
+                      </rs-layer>
+                      <!--
+
+								-->
+                      <rs-layer
+                        id="slider-5-slide-16-layer-13"
+                        class="tp-shape tp-shapewrapper"
+                        data-type="shape"
+                        data-rsp_ch="on"
+                        data-xy="x:c;y:b;yo:70px,70px,70px,40px;"
+                        data-text="a:inherit;"
+                        data-dim="w:420px;h:50px;"
+                        data-frame_0="y:-100%;o:1;"
+                        data-frame_0_mask="u:t;"
+                        data-frame_1="st:990;sp:500;sR:550;"
+                        data-frame_1_mask="u:t;"
+                        data-frame_999="st:w;sp:800;sR:2010;auto:true;"
+                        data-frame_999_mask="u:t;"
+                        style="z-index: 13; background-color: #ffffff"
+                      >
+                        <rs-bg-elem
+                          style="position: absolute; top: 0px; left: 0px"
+                        ></rs-bg-elem>
+                      </rs-layer>
+                      <!--
+
+								-->
+                      <rs-layer
+                        id="slider-5-slide-16-layer-14"
+                        data-type="text"
+                        data-color="#121559"
+                        data-rsp_ch="on"
+                        data-xy="x:c;y:b;yo:75px,75px,75px,45px;"
+                        data-text="s:30;l:40;fw:900;a:center;"
+                        data-frame_0="o:1;"
+                        data-frame_0_words="d:10;y:-100%;o:1;rX:0deg;"
+                        data-frame_0_mask="u:t;"
+                        data-frame_1="st:440;sp:1500;"
+                        data-frame_1_words="d:10;"
+                        data-frame_1_mask="u:t;"
+                        data-frame_999="st:w;sp:800;sR:1160;auto:true;"
+                        data-frame_999_mask="u:t;"
+                        style="
+                          z-index: 14;
+                          font-family: Roboto;
+                          text-transform: uppercase;
+                        "
+                      >
+                        <rs-bg-elem
+                          style="position: absolute; top: 0px; left: 0px"
+                        ></rs-bg-elem>
+                        15TH OF AUGUST, 2021
+                      </rs-layer>
+                      <!--
+							-->
+                    </rs-group>
+                    <!--
+
+							-->
+                    <rs-group
+                      id="slider-5-slide-16-layer-16"
+                      data-type="group"
+                      data-xy="x:c;y:m,m,m,b;yo:200px,200px,190px,40px;"
+                      data-text="l:22;a:inherit;"
+                      data-dim="w:400px;h:100px;"
+                      data-frame_0="o:1;"
+                      data-frame_1="st:1890;sp:1400;sR:1890;"
+                      data-frame_999="o:0;st:w;sp:1000;sR:210;sA:3500;"
+                      style="z-index: 19"
+                    >
+                      <rs-bg-elem
+                        style="position: absolute; top: 0px; left: 0px"
+                      ></rs-bg-elem>
+                      <a
+                        id="slider-5-slide-16-layer-15"
+                        class="rs-layer rev-btn"
+                        href="https://hbku-soos.com/login"
+                        target="_self"
+                        data-type="button"
+                        data-color="#007aff||#007aff||#f20487||#f20487"
+                        data-xy="x:c;xo:-75px,-75px,-90px,-100px;y:b;yo:21px,21px,20px,20px;"
+                        data-text="s:18;l:30;fw:700;a:inherit;"
+                        data-dim="w:auto,auto,auto,150px;"
+                        data-rsp_bd="off"
+                        data-padding="t:12;r:35;b:12;l:35;"
+                        data-frame_0="sX:0.9;sY:0.9;"
+                        data-frame_1="st:1900;sp:1200;sR:10;"
+                        data-frame_999="st:w;sp:800;sR:400;auto:true;"
+                        data-frame_hover="c:#fff;bgc:#f20487;boc:#000;bor:0px,0px,0px,0px;bos:solid;oX:50;oY:50;"
+                        style="
+                          z-index: 17;
+                          background-color: #ffffff;
+                          font-family: Roboto;
+                          cursor: pointer;
+                          outline: none;
+                          box-shadow: none;
+                          box-sizing: border-box;
+                          -moz-box-sizing: border-box;
+                          -webkit-box-sizing: border-box;
+                        "
+                      >
+                        <rs-bg-elem
+                          style="position: absolute; top: 0px; left: 0px"
+                        ></rs-bg-elem>
+                        LOGIN
+                      </a>
+                      <!--
+
+								--><a
+                        id="slider-5-slide-16-layer-17"
+                        class="rs-layer rev-btn"
+                        href="/programs/"
+                        target="_self"
+                        data-type="button"
+                        data-xy="x:c;xo:89px,89px,89px,100px;y:b;yo:21px;"
+                        data-text="s:18;l:30;fw:700;a:inherit;"
+                        data-dim="w:auto,auto,auto,140px;"
+                        data-rsp_bd="off"
+                        data-padding="t:12;r:35;b:12;l:35;"
+                        data-frame_0="sX:0.9;sY:0.9;"
+                        data-frame_1="st:2230;sp:1200;sR:340;"
+                        data-frame_999="o:0;st:w;sp:800;sR:70;"
+                        data-frame_hover="c:#fff;bgc:#f20487;boc:#000;bor:0px,0px,0px,0px;bos:solid;oX:50;oY:50;"
+                        style="
+                          z-index: 18;
+                          background-color: #3813c2;
+                          font-family: Roboto;
+                          cursor: pointer;
+                          outline: none;
+                          box-shadow: none;
+                          box-sizing: border-box;
+                          -moz-box-sizing: border-box;
+                          -webkit-box-sizing: border-box;
+                        "
+                      >
+                        <rs-bg-elem
+                          style="position: absolute; top: 0px; left: 0px"
+                        ></rs-bg-elem>
+                        PROGRAM
+                      </a>
+                      <!--
+							-->
+                    </rs-group>
+                    <!--
+
+							-->
+                    <rs-layer
+                      id="slider-5-slide-16-layer-9"
+                      class="tp-shape tp-shapewrapper"
+                      data-type="shape"
+                      data-rsp_ch="on"
+                      data-xy="x:c;y:m;"
+                      data-text="a:inherit;"
+                      data-dim="w:100%;h:100%;"
+                      data-basealign="slide"
+                      data-frame_0="o:1;"
+                      data-frame_1="sp:0;sR:10;"
+                      data-frame_999="st:w;sp:1000;sR:3490;"
+                      style="z-index: 9; background-color: rgba(21, 1, 96, 0.8)"
+                    >
+                      <rs-bg-elem
+                        style="position: absolute; top: 0px; left: 0px"
+                      ></rs-bg-elem>
+                    </rs-layer>
+                    <!--
+
+							-->
+                    <rs-layer
+                      id="slider-5-slide-16-layer-18"
+                      class="rs-fsv rs-layer-video intrinsic-ignore"
+                      data-type="video"
+                      data-rsp_ch="on"
+                      data-xy="x:0;y:0;"
+                      data-text="l:22;a:inherit;"
+                      data-dim="w:100%;h:100%;"
+                      data-basealign="slide"
+                      data-video="vfc:true;vd:100;sta:2:40;rwd:f;fc:true;l:true;ptimer:false;nse:f;sav:f;inl:f;"
+                      data-poster="//mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/revslider/video-media/20-21-Orientation-Video-Highres-V2-1_16_layer.jpeg"
+                      data-mp4="//mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/20-21-Orientation-Video-Highres-V2-1.mp4"
+                      data-frame_1="sp:3500;"
+                      data-frame_999="o:0;st:w;"
+                      style="z-index: 8"
+                    >
+                      <rs-bg-elem
+                        style="position: absolute; top: 0px; left: 0px"
+                      ></rs-bg-elem>
+                    </rs-layer>
+                    <!--
+-->
+                  </rs-slide>
+                </rs-slides>
+                <rs-static-layers>
+                  <!--
+
+							-->
+                  <rs-layer
+                    id="slider-5-slide-4-layer-10"
+                    class="
+                      shape-play-sound
+                      tp-shape tp-shapewrapper
+                      rs-layer-static
+                    "
+                    data-type="shape"
+                    data-rsp_ch="on"
+                    data-xy="x:c;"
+                    data-text="a:inherit;"
+                    data-dim="w:100%;h:100%;"
+                    data-actions="o:click;a:togglevideo;layer:slider-5-slide-4-layer-9;||o:click;a:togglelayer;ls:visible;layer:slider-5-slide-4-layer-23;||o:click;a:toggleclass;layer:slider-5-slide-4-layer-10;class:no-shape-play-sound;||o:click;a:toggleclass;layer:slider-5-slide-4-layer-10;class:hide-play-sound;"
+                    data-basealign="slide"
+                    data-onslides="s:1;e:6;"
+                    data-frame_0="tp:600;"
+                    data-frame_1="tp:600;sR:10;"
+                    data-frame_999="o:0;tp:600;st:w;sp:330;sR:3190;"
+                    data-frame_hover="c:#fff;bgc:rgba(0,0,0,0);boc:transparent;bos:none;oX:50;oY:50;sp:0;"
+                    style="
+                      z-index: 80;
+                      background-color: rgba(0, 0, 0, 0);
+                      cursor: pointer;
+                    "
+                  >
+                    <rs-bg-elem
+                      style="position: absolute; top: 0px; left: 0px"
+                    ></rs-bg-elem>
+                  </rs-layer>
+                  <!--
+
+							-->
+                  <rs-layer
+                    id="slider-5-slide-4-layer-9"
+                    class="rs-layer-static rs-layer-audio rs-layer-hidden"
+                    data-type="audio"
+                    data-rsp_ch="on"
+                    data-xy="xo:100px;yo:100px;"
+                    data-text="l:22;a:inherit;"
+                    data-onslides="s:1;"
+                    data-video="w:-1;h:-1;p:canplay;pw:2;ap:false;nse:false;sav:false;v:100;l:true;vd:100;ptimer:false;"
+                    data-mp4="//mann.vamtam.com/wp-content/uploads/2018/07/Audio.mp3"
+                    data-frame_0="tp:600;"
+                    data-frame_1="tp:600;sR:10;"
+                    data-frame_999="o:0;tp:600;st:w;sR:3190;"
+                    style="z-index: 81"
+                  >
+                    <rs-bg-elem
+                      style="position: absolute; top: 0px; left: 0px"
+                    ></rs-bg-elem>
+                    Audio Layer
+                  </rs-layer>
+                  <!--
+
+							-->
+                  <rs-layer
+                    id="slider-5-slide-4-layer-22"
+                    class="rs-svg rs-layer-static"
+                    data-type="svg"
+                    data-color="rgba(255, 255, 255, 0.5)"
+                    data-rsp_ch="on"
+                    data-xy="xo:30px;y:b;yo:30px;"
+                    data-text="s:36;fw:700;a:inherit;"
+                    data-dim="w:24px;h:24px;"
+                    data-actions="o:click;a:togglevideo;layer:slider-5-slide-4-layer-9;||o:click;a:togglelayer;ls:visible;layer:slider-5-slide-4-layer-23;"
+                    data-svg_src="/landing/assets/assets/svg/av/ic_equalizer_24px.svg"
+                    data-svgi="c:rgba(255, 255, 255, 0.5);"
+                    data-basealign="slide"
+                    data-onslides="s:1;"
+                    data-frame_0="tp:600;"
+                    data-frame_1="tp:600;sR:10;"
+                    data-frame_999="o:0;tp:600;st:w;sR:3190;"
+                    data-frame_hover="c:#fff;oX:50;oY:50;"
+                    style="z-index: 82; cursor: pointer"
+                  >
+                    <rs-bg-elem
+                      style="position: absolute; top: 0px; left: 0px"
+                    ></rs-bg-elem>
+
+                    <div class="rs-untoggled-content"></div>
+                    <div class="rs-toggled-content"></div>
+                  </rs-layer>
+                  <!--
+
+							-->
+                  <rs-layer
+                    id="slider-5-slide-4-layer-23"
+                    class="rs-layer-static"
+                    data-type="text"
+                    data-color="rgba(255, 255, 255, 0.5)"
+                    data-rsp_ch="on"
+                    data-xy="xo:60px;y:b;yo:28px;"
+                    data-text="s:12;l:20;a:inherit;"
+                    data-actions="o:click;a:togglevideo;layer:slider-5-slide-4-layer-9;||o:click;a:togglelayer;ls:visible;layer:slider-5-slide-4-layer-23;"
+                    data-basealign="slide"
+                    data-onslides="s:1;"
+                    data-triggercache="keep"
+                    data-frame_0="tp:600;"
+                    data-frame_1="tp:600;sR:10;st:a;"
+                    data-frame_999="o:0;tp:600;st:a;sR:3190;"
+                    data-frame_hover="c:#fff;bor:0px,0px,0px,0px;bow:0px,0px,0px,0px;oX:50;oY:50;"
+                    style="z-index: 83; font-family: Roboto; cursor: pointer"
+                  >
+                    <rs-bg-elem
+                      style="position: absolute; top: 0px; left: 0px"
+                    ></rs-bg-elem>
+                    Play sound
+                  </rs-layer>
+                  <!--
+					-->
+                </rs-static-layers>
+              </rs-module>
+              <script type="text/javascript">
+                setREVStartSize({
+                  c: "rev_slider_5_1",
+                  rl: [1240, 1024, 778, 480],
+                  el: [600, 600, 500, 500],
+                  gw: [1370, 1280, 900, 480],
+                  gh: [600, 600, 500, 500],
+                  type: "standard",
+                  justify: "",
+                  layout: "fullwidth",
+                  mh: "600",
+                })
+              </script>
+            </rs-module-wrap>
+            <!-- END REVOLUTION SLIDER -->
+          </div>
+        </div>
+      </header>
+
+      <div id="main-content">
+        <div id="main" role="main" class="vamtam-main layout-full">
+          <div class="page-wrapper">
+            <article
+              id="post-11419"
+              class="full post-11419 page type-page status-publish hentry"
+            >
+              <div class="page-content clearfix the-content-parent">
+                <div
+                  class="
+                    fl-builder-content
+                    fl-builder-content-11419
+                    fl-builder-content-primary
+                    fl-builder-global-templates-locked
+                  "
+                  data-post-id="11419"
+                >
+                  <%- include('hayakom'); %>
+                  <!--  -->
+                  <%- include('orientation-program'); %>
+                  <!--  -->
+                  <%- include('speakers'); %>
+
+                  <div
+                    class="
+                      fl-row
+                      fl-row-full-width
+                      fl-row-bg-none
+                      fl-node-5b096caa4168a
+                      fl-row-bg-attachment-scroll
+                    "
+                    data-node="5b096caa4168a"
+                  >
+                    <div class="fl-row-content-wrap">
+                      <div
+                        class="
+                          fl-row-content fl-row-fixed-width fl-node-content
+                        "
+                      >
+                        <div
+                          class="
+                            fl-col-group
+                            fl-node-5b096caa41828
+                            fl-col-group-custom-width
+                          "
+                          data-node="5b096caa41828"
+                        >
+                          <div
+                            class="fl-col fl-node-5b096caa41862"
+                            data-node="5b096caa41862"
+                          >
+                            <div class="fl-col-content fl-node-content">
+                              <div
+                                class="
+                                  fl-module
+                                  fl-module-vamtam-heading
+                                  fl-node-5b096caa4189c
+                                "
+                                data-node="5b096caa4189c"
+                              >
+                                <div class="fl-module-content fl-node-content">
+                                  <h2
+                                    class="vamtam-heading vamtam-font-style-2"
+                                  >
+                                    <span class="vamtam-heading-text"
+                                      >Previous Orientations</span
+                                    >
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="
+                      fl-row
+                      fl-row-full-width
+                      fl-row-bg-color
+                      fl-node-5b096d09bb5cf
+                      fl-row-bg-attachment-scroll
+                    "
+                    data-node="5b096d09bb5cf"
+                  >
+                    <div class="fl-row-content-wrap">
+                      <div
+                        class="
+                          fl-row-content fl-row-fixed-width fl-node-content
+                        "
+                      >
+                        <div
+                          class="
+                            fl-col-group
+                            fl-node-5b096d09c862b
+                            fl-col-group-custom-width
+                          "
+                          data-node="5b096d09c862b"
+                        >
+                          <div
+                            class="fl-col fl-node-5b096d09c8791"
+                            data-node="5b096d09c8791"
+                          >
+                            <div class="fl-col-content fl-node-content">
+                              <div
+                                class="
+                                  fl-module
+                                  fl-module-rich-text
+                                  fl-node-5b096d957c60f
+                                "
+                                data-node="5b096d957c60f"
+                              >
+                                <div class="fl-module-content fl-node-content">
+                                  <div class="fl-rich-text">
+                                    <div
+                                      data-carousel-extra='{"blog_id":1,"permalink":"http:\/\/mqixntn.cluster031.hosting.ovh.net\/"}'
+                                      id="gallery-4"
+                                      class="
+                                        gallery
+                                        galleryid-11419
+                                        gallery-columns-5 gallery-size-thumbnail
+                                      "
+                                    >
+                                      <figure class="gallery-item">
+                                        <div class="gallery-icon landscape">
+                                          <a
+                                            href="http://mqixntn.cluster031.hosting.ovh.net/index.php/home/press-release-dr-ahmad-m-hasnah-president-of-hbku-speaking-at-orientation-2017/"
+                                            ><img
+                                              width="150"
+                                              height="150"
+                                              src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Press-Release-Dr.-Ahmad-M.-Hasnah-President-of-HBKU-speaking-at-Orientation-2017-150x150.jpg"
+                                              class="
+                                                attachment-thumbnail
+                                                size-thumbnail
+                                              "
+                                              alt=""
+                                              loading="lazy"
+                                              srcset="
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Press-Release-Dr.-Ahmad-M.-Hasnah-President-of-HBKU-speaking-at-Orientation-2017-150x150.jpg 150w,
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Press-Release-Dr.-Ahmad-M.-Hasnah-President-of-HBKU-speaking-at-Orientation-2017-315x315.jpg 315w,
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Press-Release-Dr.-Ahmad-M.-Hasnah-President-of-HBKU-speaking-at-Orientation-2017-100x100.jpg 100w
+                                              "
+                                              sizes="(max-width: 150px) 100vw, 150px"
+                                              data-attachment-id="987721"
+                                              data-permalink="http://mqixntn.cluster031.hosting.ovh.net/index.php/home/press-release-dr-ahmad-m-hasnah-president-of-hbku-speaking-at-orientation-2017/"
+                                              data-orig-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Press-Release-Dr.-Ahmad-M.-Hasnah-President-of-HBKU-speaking-at-Orientation-2017.jpg"
+                                              data-orig-size="2000,1335"
+                                              data-comments-opened="1"
+                                              data-image-meta='{"aperture":"2.8","credit":"","camera":"NIKON D810","caption":"","created_timestamp":"1503225551","copyright":"","focal_length":"110","iso":"1600","shutter_speed":"0.00625","title":"","orientation":"1"}'
+                                              data-image-title="Press Release &#8211; Dr. Ahmad M. Hasnah, President of HBKU, speaking at Orientation 2017"
+                                              data-image-description=""
+                                              data-image-caption=""
+                                              data-medium-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Press-Release-Dr.-Ahmad-M.-Hasnah-President-of-HBKU-speaking-at-Orientation-2017-300x200.jpg"
+                                              data-large-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Press-Release-Dr.-Ahmad-M.-Hasnah-President-of-HBKU-speaking-at-Orientation-2017-1024x684.jpg"
+                                          /></a>
+                                        </div>
+                                      </figure>
+                                      <figure class="gallery-item">
+                                        <div class="gallery-icon landscape">
+                                          <a
+                                            href="http://mqixntn.cluster031.hosting.ovh.net/index.php/home/story-on-international-students-students-at-orientation-event-hayakoum-at-hbku/"
+                                            ><img
+                                              width="150"
+                                              height="150"
+                                              src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Story-on-International-Students-Students-at-Orientation-Event-Hayakoum-at-HBKU-150x150.jpg"
+                                              class="
+                                                attachment-thumbnail
+                                                size-thumbnail
+                                              "
+                                              alt=""
+                                              loading="lazy"
+                                              srcset="
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Story-on-International-Students-Students-at-Orientation-Event-Hayakoum-at-HBKU-150x150.jpg 150w,
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Story-on-International-Students-Students-at-Orientation-Event-Hayakoum-at-HBKU-315x315.jpg 315w,
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Story-on-International-Students-Students-at-Orientation-Event-Hayakoum-at-HBKU-100x100.jpg 100w
+                                              "
+                                              sizes="(max-width: 150px) 100vw, 150px"
+                                              data-attachment-id="987722"
+                                              data-permalink="http://mqixntn.cluster031.hosting.ovh.net/index.php/home/story-on-international-students-students-at-orientation-event-hayakoum-at-hbku/"
+                                              data-orig-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Story-on-International-Students-Students-at-Orientation-Event-Hayakoum-at-HBKU.jpg"
+                                              data-orig-size="2000,1335"
+                                              data-comments-opened="1"
+                                              data-image-meta='{"aperture":"5","credit":"","camera":"NIKON D810","caption":"","created_timestamp":"1503224340","copyright":"","focal_length":"24","iso":"1000","shutter_speed":"0.01","title":"","orientation":"1"}'
+                                              data-image-title="Story on International Students &#8211; Students at Orientation Event, Hayakoum at HBKU"
+                                              data-image-description=""
+                                              data-image-caption=""
+                                              data-medium-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Story-on-International-Students-Students-at-Orientation-Event-Hayakoum-at-HBKU-300x200.jpg"
+                                              data-large-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/Story-on-International-Students-Students-at-Orientation-Event-Hayakoum-at-HBKU-1024x684.jpg"
+                                          /></a>
+                                        </div>
+                                      </figure>
+                                      <figure class="gallery-item">
+                                        <div class="gallery-icon landscape">
+                                          <a
+                                            href="http://mqixntn.cluster031.hosting.ovh.net/index.php/home/hbku-executive-education-introductory-orientation-2018-2/"
+                                            ><img
+                                              width="150"
+                                              height="150"
+                                              src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUEducationIntroductoryOrientation2018_54-150x150.jpg"
+                                              class="
+                                                attachment-thumbnail
+                                                size-thumbnail
+                                              "
+                                              alt=""
+                                              loading="lazy"
+                                              aria-describedby="gallery-4-987724"
+                                              srcset="
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUEducationIntroductoryOrientation2018_54-150x150.jpg 150w,
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUEducationIntroductoryOrientation2018_54-315x315.jpg 315w,
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUEducationIntroductoryOrientation2018_54-100x100.jpg 100w
+                                              "
+                                              sizes="(max-width: 150px) 100vw, 150px"
+                                              data-attachment-id="987724"
+                                              data-permalink="http://mqixntn.cluster031.hosting.ovh.net/index.php/home/hbku-executive-education-introductory-orientation-2018-2/"
+                                              data-orig-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUEducationIntroductoryOrientation2018_54-scaled.jpg"
+                                              data-orig-size="2560,1704"
+                                              data-comments-opened="1"
+                                              data-image-meta='{"aperture":"4","credit":"","camera":"NIKON D4","caption":"HBKU Executive Education Introductory Orientation 2018","created_timestamp":"1531824019","copyright":"","focal_length":"36","iso":"1250","shutter_speed":"0.008","title":"HBKU Executive Education Introductory Orientation 2018","orientation":"0"}'
+                                              data-image-title="HBKU Executive Education Introductory Orientation 2018"
+                                              data-image-description=""
+                                              data-image-caption="&lt;p&gt;HBKU Executive Education Introductory Orientation 2018&lt;/p&gt;
+"
+                                              data-medium-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUEducationIntroductoryOrientation2018_54-300x200.jpg"
+                                              data-large-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUEducationIntroductoryOrientation2018_54-1024x682.jpg"
+                                          /></a>
+                                        </div>
+                                        <figcaption
+                                          class="
+                                            wp-caption-text
+                                            gallery-caption
+                                          "
+                                          id="gallery-4-987724"
+                                        >
+                                          HBKU Executive Education Introductory
+                                          Orientation 2018
+                                        </figcaption>
+                                      </figure>
+                                      <figure class="gallery-item">
+                                        <div class="gallery-icon landscape">
+                                          <a
+                                            href="http://mqixntn.cluster031.hosting.ovh.net/index.php/home/hbkustudentsorientation-2018/"
+                                            ><img
+                                              width="150"
+                                              height="150"
+                                              src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUStudentsOrientation-2018-150x150.jpg"
+                                              class="
+                                                attachment-thumbnail
+                                                size-thumbnail
+                                              "
+                                              alt=""
+                                              loading="lazy"
+                                              srcset="
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUStudentsOrientation-2018-150x150.jpg 150w,
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUStudentsOrientation-2018-315x315.jpg 315w,
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUStudentsOrientation-2018-100x100.jpg 100w
+                                              "
+                                              sizes="(max-width: 150px) 100vw, 150px"
+                                              data-attachment-id="987725"
+                                              data-permalink="http://mqixntn.cluster031.hosting.ovh.net/index.php/home/hbkustudentsorientation-2018/"
+                                              data-orig-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUStudentsOrientation-2018-scaled.jpg"
+                                              data-orig-size="2560,1707"
+                                              data-comments-opened="1"
+                                              data-image-meta='{"aperture":"4.5","credit":"Al Rawi Productions","camera":"Canon EOS-1D X","caption":"","created_timestamp":"1535845962","copyright":"","focal_length":"24","iso":"1250","shutter_speed":"0.00625","title":"","orientation":"1"}'
+                                              data-image-title="HBKUStudentsOrientation 2018"
+                                              data-image-description=""
+                                              data-image-caption=""
+                                              data-medium-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUStudentsOrientation-2018-300x200.jpg"
+                                              data-large-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUStudentsOrientation-2018-1024x683.jpg"
+                                          /></a>
+                                        </div>
+                                      </figure>
+                                      <figure class="gallery-item">
+                                        <div class="gallery-icon landscape">
+                                          <a
+                                            href="http://mqixntn.cluster031.hosting.ovh.net/index.php/home/hbku-executive-education-introductory-orientation-2018-3/"
+                                            ><img
+                                              width="150"
+                                              height="150"
+                                              src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUEducationIntroductoryOrientation2018_58-150x150.jpg"
+                                              class="
+                                                attachment-thumbnail
+                                                size-thumbnail
+                                              "
+                                              alt=""
+                                              loading="lazy"
+                                              aria-describedby="gallery-4-987726"
+                                              srcset="
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUEducationIntroductoryOrientation2018_58-150x150.jpg 150w,
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUEducationIntroductoryOrientation2018_58-315x315.jpg 315w,
+                                                http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUEducationIntroductoryOrientation2018_58-100x100.jpg 100w
+                                              "
+                                              sizes="(max-width: 150px) 100vw, 150px"
+                                              data-attachment-id="987726"
+                                              data-permalink="http://mqixntn.cluster031.hosting.ovh.net/index.php/home/hbku-executive-education-introductory-orientation-2018-3/"
+                                              data-orig-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUEducationIntroductoryOrientation2018_58-scaled.jpg"
+                                              data-orig-size="2560,1704"
+                                              data-comments-opened="1"
+                                              data-image-meta='{"aperture":"2.8","credit":"","camera":"NIKON D4","caption":"HBKU Executive Education Introductory Orientation 2018","created_timestamp":"1531824212","copyright":"","focal_length":"24","iso":"1600","shutter_speed":"0.008","title":"HBKU Executive Education Introductory Orientation 2018","orientation":"0"}'
+                                              data-image-title="HBKU Executive Education Introductory Orientation 2018"
+                                              data-image-description=""
+                                              data-image-caption="&lt;p&gt;HBKU Executive Education Introductory Orientation 2018&lt;/p&gt;
+"
+                                              data-medium-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUEducationIntroductoryOrientation2018_58-300x200.jpg"
+                                              data-large-file="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/2021/08/HBKUEducationIntroductoryOrientation2018_58-1024x682.jpg"
+                                          /></a>
+                                        </div>
+                                        <figcaption
+                                          class="
+                                            wp-caption-text
+                                            gallery-caption
+                                          "
+                                          id="gallery-4-987726"
+                                        >
+                                          HBKU Executive Education Introductory
+                                          Orientation 2018
+                                        </figcaption>
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <%- include('discover'); %>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- #main -->
+      </div>
+      <!-- #main-content -->
+      <%- include('footer'); %>
+    </div>
+    <!-- / #page -->
+
+    <script type="text/javascript">
+      window.RS_MODULES = window.RS_MODULES || {}
+      window.RS_MODULES.modules = window.RS_MODULES.modules || {}
+      window.RS_MODULES.waiting = window.RS_MODULES.waiting || []
+      window.RS_MODULES.defered = true
+      window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {}
+      window.RS_MODULES.type = "compiled"
+    </script>
+    <div id="vamtam-overlay-search">
+      <button id="vamtam-overlay-search-close">
+        <span class="icon shortcode theme use-hover" style="">&#59700;</span>
+      </button>
+      <form
+        action="http://mqixntn.cluster031.hosting.ovh.net/"
+        class="searchform"
+        method="get"
+        role="search"
+        novalidate=""
+      >
+        <input
+          type="search"
+          required="required"
+          placeholder="Search..."
+          name="s"
+          value=""
+        />
+      </form>
+    </div>
+    <div
+      id="scroll-to-top"
+      class="vamtam-scroll-to-top icon"
+      style="opacity: 1; transform: scale3d(1, 1, 1)"
+    >
+      
+    </div>
+    <script>
+      ;(function (body) {
+        "use strict"
+        body.className = body.className.replace(/\btribe-no-js\b/, "tribe-js")
+      })(document.body)
+    </script>
+    <!-- Instagram Feed JS -->
+    <script type="text/javascript">
+      var sbiajaxurl =
+        "http://mqixntn.cluster031.hosting.ovh.net/wp-admin/admin-ajax.php"
+    </script>
+    <script>
+      /* <![CDATA[ */
+      var tribe_l10n_datatables = {
+        aria: {
+          sort_ascending: ": activer pour trier la colonne ascendante",
+          sort_descending: ": activer pour trier la colonne descendante",
+        },
+        length_menu: "Afficher les saisies _MENU_",
+        empty_table: "Aucune donn\u00e9e disponible sur le tableau",
+        info: "Affichant_START_ \u00e0 _END_ du _TOTAL_ des saisies",
+        info_empty: "Affichant 0 \u00e0 0 de 0 saisies",
+        info_filtered:
+          "(filtr\u00e9 \u00e0 partir du total des saisies _MAX_ )",
+        zero_records: "Aucun enregistrement correspondant trouv\u00e9",
+        search: "Rechercher :",
+        all_selected_text:
+          "Tous les \u00e9l\u00e9ments de cette page ont \u00e9t\u00e9 s\u00e9lectionn\u00e9s. ",
+        select_all_link: "S\u00e9lectionner toutes les pages",
+        clear_selection: "Effacer la s\u00e9lection.",
+        pagination: {
+          all: "Tout",
+          next: "Suivant",
+          previous: "Pr\u00e9c\u00e9dent",
+        },
+        select: {
+          rows: {
+            0: "",
+            _: ": a s\u00e9lectionn\u00e9 %d rang\u00e9es",
+            1: ": a s\u00e9lectionn\u00e9 une rang\u00e9e",
+          },
+        },
+        datepicker: {
+          dayNames: [
+            "dimanche",
+            "lundi",
+            "mardi",
+            "mercredi",
+            "jeudi",
+            "vendredi",
+            "samedi",
+          ],
+          dayNamesShort: ["dim", "lun", "mar", "mer", "jeu", "ven", "sam"],
+          dayNamesMin: ["D", "L", "M", "M", "J", "V", "S"],
+          monthNames: [
+            "janvier",
+            "f\u00e9vrier",
+            "mars",
+            "avril",
+            "mai",
+            "juin",
+            "juillet",
+            "ao\u00fbt",
+            "septembre",
+            "octobre",
+            "novembre",
+            "d\u00e9cembre",
+          ],
+          monthNamesShort: [
+            "janvier",
+            "f\u00e9vrier",
+            "mars",
+            "avril",
+            "mai",
+            "juin",
+            "juillet",
+            "ao\u00fbt",
+            "septembre",
+            "octobre",
+            "novembre",
+            "d\u00e9cembre",
+          ],
+          monthNamesMin: [
+            "Jan",
+            "F\u00e9v",
+            "Mar",
+            "Avr",
+            "Mai",
+            "Juin",
+            "Juil",
+            "Ao\u00fbt",
+            "Sep",
+            "Oct",
+            "Nov",
+            "D\u00e9c",
+          ],
+          nextText: "Suivant",
+          prevText: "Pr\u00e9c\u00e9dent",
+          currentText: "Aujourd\u2019hui ",
+          closeText: "Termin\u00e9",
+          today: "Aujourd\u2019hui ",
+          clear: "Effac\u00e9",
+        },
+      } /* ]]> */
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400%2C900%2C700%2C300%2C500"
+      rel="stylesheet"
+      property="stylesheet"
+      media="all"
+      type="text/css"
+    />
+
+    <div id="jp-carousel-loading-overlay">
+      <div id="jp-carousel-loading-wrapper">
+        <span id="jp-carousel-library-loading">&nbsp;</span>
+      </div>
+    </div>
+    <div class="jp-carousel-overlay" style="display: none">
+      <div class="jp-carousel-container">
+        <!-- The Carousel Swiper -->
+        <div
+          class="
+            jp-carousel-wrap
+            swiper-container
+            jp-carousel-swiper-container jp-carousel-transitions
+          "
+          itemscope
+          itemtype="https://schema.org/ImageGallery"
+        >
+          <div class="jp-carousel swiper-wrapper"></div>
+          <div class="jp-swiper-button-prev swiper-button-prev">
+            <svg
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="maskPrev"
+                mask-type="alpha"
+                maskUnits="userSpaceOnUse"
+                x="8"
+                y="6"
+                width="9"
+                height="12"
+              >
+                <path
+                  d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z"
+                  fill="white"
+                />
+              </mask>
+              <g mask="url(#maskPrev)">
+                <rect x="0.579102" width="23.8823" height="24" fill="#FFFFFF" />
+              </g>
+            </svg>
+          </div>
+          <div class="jp-swiper-button-next swiper-button-next">
+            <svg
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="maskNext"
+                mask-type="alpha"
+                maskUnits="userSpaceOnUse"
+                x="8"
+                y="6"
+                width="8"
+                height="12"
+              >
+                <path
+                  d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z"
+                  fill="white"
+                />
+              </mask>
+              <g mask="url(#maskNext)">
+                <rect x="0.34375" width="23.8822" height="24" fill="#FFFFFF" />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <!-- The main close buton -->
+        <div class="jp-carousel-close-hint">
+          <svg
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask
+              id="maskClose"
+              mask-type="alpha"
+              maskUnits="userSpaceOnUse"
+              x="5"
+              y="5"
+              width="15"
+              height="14"
+            >
+              <path
+                d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z"
+                fill="white"
+              />
+            </mask>
+            <g mask="url(#maskClose)">
+              <rect x="0.409668" width="23.8823" height="24" fill="#FFFFFF" />
+            </g>
+          </svg>
+        </div>
+        <!-- Image info, comments and meta -->
+        <div class="jp-carousel-info">
+          <div class="jp-carousel-info-footer">
+            <div class="jp-carousel-pagination-container">
+              <div class="jp-swiper-pagination swiper-pagination"></div>
+              <div class="jp-carousel-pagination"></div>
+            </div>
+            <div class="jp-carousel-photo-title-container">
+              <h2 class="jp-carousel-photo-caption"></h2>
+            </div>
+            <div class="jp-carousel-photo-icons-container">
+              <a
+                href="#"
+                class="jp-carousel-icon-btn jp-carousel-icon-info"
+                aria-label="Activer la visibilité des métadonnées sur les photos"
+              >
+                <span class="jp-carousel-icon">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="maskInfo"
+                      mask-type="alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="2"
+                      y="2"
+                      width="21"
+                      height="20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z"
+                        fill="white"
+                      />
+                    </mask>
+                    <g mask="url(#maskInfo)">
+                      <rect
+                        x="0.8125"
+                        width="23.8823"
+                        height="24"
+                        fill="#FFFFFF"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </a>
+              <a
+                href="#"
+                class="jp-carousel-icon-btn jp-carousel-icon-comments"
+                aria-label="Activer la visibilité des commentaires sur les photos"
+              >
+                <span class="jp-carousel-icon">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="maskComments"
+                      mask-type="alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="2"
+                      y="2"
+                      width="21"
+                      height="20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z"
+                        fill="white"
+                      />
+                    </mask>
+                    <g mask="url(#maskComments)">
+                      <rect
+                        x="0.34668"
+                        width="23.8823"
+                        height="24"
+                        fill="#FFFFFF"
+                      />
+                    </g>
+                  </svg>
+
+                  <span
+                    class="jp-carousel-has-comments-indicator"
+                    aria-label="Cette image comporte des commentaires."
+                  ></span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="jp-carousel-info-extra">
+            <div class="jp-carousel-info-content-wrapper">
+              <div class="jp-carousel-photo-title-container">
+                <h2 class="jp-carousel-photo-title"></h2>
+              </div>
+              <div class="jp-carousel-comments-wrapper">
+                <div id="jp-carousel-comments-loading">
+                  <span>Chargement des commentaires&hellip;</span>
+                </div>
+                <div class="jp-carousel-comments"></div>
+                <div id="jp-carousel-comment-form-container">
+                  <span id="jp-carousel-comment-form-spinner">&nbsp;</span>
+                  <div id="jp-carousel-comment-post-results"></div>
+                  <form id="jp-carousel-comment-form">
+                    <label
+                      for="jp-carousel-comment-form-comment-field"
+                      class="screen-reader-text"
+                      >Écrire un commentaire...</label
+                    >
+                    <textarea
+                      name="comment"
+                      class="
+                        jp-carousel-comment-form-field
+                        jp-carousel-comment-form-textarea
+                      "
+                      id="jp-carousel-comment-form-comment-field"
+                      placeholder="Écrire un commentaire..."
+                    ></textarea>
+                    <div id="jp-carousel-comment-form-submit-and-info-wrapper">
+                      <div id="jp-carousel-comment-form-commenting-as">
+                        <fieldset>
+                          <label for="jp-carousel-comment-form-email-field"
+                            >E-mail (requis)</label
+                          >
+                          <input
+                            type="text"
+                            name="email"
+                            class="
+                              jp-carousel-comment-form-field
+                              jp-carousel-comment-form-text-field
+                            "
+                            id="jp-carousel-comment-form-email-field"
+                          />
+                        </fieldset>
+                        <fieldset>
+                          <label for="jp-carousel-comment-form-author-field"
+                            >Nom (requis)</label
+                          >
+                          <input
+                            type="text"
+                            name="author"
+                            class="
+                              jp-carousel-comment-form-field
+                              jp-carousel-comment-form-text-field
+                            "
+                            id="jp-carousel-comment-form-author-field"
+                          />
+                        </fieldset>
+                        <fieldset>
+                          <label for="jp-carousel-comment-form-url-field"
+                            >Site web</label
+                          >
+                          <input
+                            type="text"
+                            name="url"
+                            class="
+                              jp-carousel-comment-form-field
+                              jp-carousel-comment-form-text-field
+                            "
+                            id="jp-carousel-comment-form-url-field"
+                          />
+                        </fieldset>
+                      </div>
+                      <input
+                        type="submit"
+                        name="submit"
+                        class="jp-carousel-comment-form-button"
+                        id="jp-carousel-comment-form-button-submit"
+                        value="Laisser un commentaire"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="jp-carousel-image-meta">
+                <div class="jp-carousel-title-and-caption">
+                  <div class="jp-carousel-photo-info">
+                    <h3
+                      class="jp-carousel-caption"
+                      itemprop="caption description"
+                    ></h3>
+                  </div>
+
+                  <div class="jp-carousel-photo-description"></div>
+                </div>
+                <ul class="jp-carousel-image-exif" style="display: none"></ul>
+                <a
+                  class="jp-carousel-image-download"
+                  target="_blank"
+                  style="display: none"
+                >
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="mask0"
+                      mask-type="alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="3"
+                      y="3"
+                      width="19"
+                      height="18"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z"
+                        fill="white"
+                      />
+                    </mask>
+                    <g mask="url(#mask0)">
+                      <rect
+                        x="0.870605"
+                        width="23.8823"
+                        height="24"
+                        fill="#FFFFFF"
+                      />
+                    </g>
+                  </svg>
+                  <span class="jp-carousel-download-text"></span>
+                </a>
+                <div class="jp-carousel-image-map" style="display: none"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      ;(function () {
+        var c = document.body.className
+        c = c.replace(/woocommerce-no-js/, "woocommerce-js")
+        document.body.className = c
+      })()
+    </script>
+    <script type="text/javascript">
+      if (typeof revslider_showDoubleJqueryError === "undefined") {
+        function revslider_showDoubleJqueryError(sliderID) {
+          console.log(
+            "You have some jquery.js library include that comes after the Slider Revolution files js inclusion."
+          )
+          console.log("To fix this, you can:")
+          console.log(
+            "1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on"
+          )
+          console.log("2. Find the double jQuery.js inclusion and remove it")
+          return "Double Included jQuery Library"
+        }
+      }
+    </script>
+    <link
+      rel="preload"
+      as="font"
+      id="rs-icon-set-revicon-woff"
+      href="/landing/assets/fonts/revicons/revicons.woff?5510888"
+      type="font/woff"
+      crossorigin="anonymous"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="rs-plugin-settings-css"
+      href="/landing/assets/css/rs6.css?ver=6.5.4"
+      type="text/css"
+      media="all"
+    />
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+      .shape-play-sound {
+        cursor: url("https://mann.vamtam.com/wp-content/uploads/2018/07/play-sound.svg"),
+          auto !important;
+      }
+
+      .no-shape-play-sound {
+        cursor: pointer !important;
+      }
+
+      .hide-play-sound {
+        display: none !important;
+      }
+
+      #rev_slider_5_1_wrapper rs-loader.spinner3 div {
+        background-color: #ffffff !important;
+      }
+
+      #rev_slider_4_2_wrapper rs-loader.spinner2 {
+        background-color: #f7f7f7 !important;
+      }
+
+      #rev_slider_9_3_wrapper .hephaistos.tparrows {
+        cursor: pointer;
+        background: #f9f8ff;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        display: block;
+        z-index: 1000;
+        border-radius: 50%;
+      }
+
+      #rev_slider_9_3_wrapper .hephaistos.tparrows.rs-touchhover {
+        background: #f0ecff;
+      }
+
+      #rev_slider_9_3_wrapper .hephaistos.tparrows:before {
+        font-family: "revicons";
+        font-size: 18px;
+        color: #3813c2;
+        display: block;
+        line-height: 60px;
+        text-align: center;
+      }
+
+      #rev_slider_9_3_wrapper .hephaistos.tparrows.tp-leftarrow:before {
+        content: "\e82c";
+        margin-left: -2px;
+      }
+
+      #rev_slider_9_3_wrapper .hephaistos.tparrows.tp-rightarrow:before {
+        content: "\e82d";
+        margin-right: -2px;
+      }
+
+      #rev_slider_9_3_wrapper rs-loader.spinner2 {
+        background-color: #ffffff !important;
+      }
+
+      #rev_slider_3_4_wrapper rs-loader.spinner2 {
+        background-color: #ffffff !important;
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1"
+      id="jquery-ui-core-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.12.1"
+      id="jquery-ui-datepicker-js"
+    ></script>
+    <script type="text/javascript" id="jquery-ui-datepicker-js-after">
+      jQuery(document).ready(function (jQuery) {
+        jQuery.datepicker.setDefaults({
+          closeText: "Fermer",
+          currentText: "Aujourd\u2019hui",
+          monthNames: [
+            "janvier",
+            "f\u00e9vrier",
+            "mars",
+            "avril",
+            "mai",
+            "juin",
+            "juillet",
+            "ao\u00fbt",
+            "septembre",
+            "octobre",
+            "novembre",
+            "d\u00e9cembre",
+          ],
+          monthNamesShort: [
+            "Jan",
+            "F\u00e9v",
+            "Mar",
+            "Avr",
+            "Mai",
+            "Juin",
+            "Juil",
+            "Ao\u00fbt",
+            "Sep",
+            "Oct",
+            "Nov",
+            "D\u00e9c",
+          ],
+          nextText: "Suivant",
+          prevText: "Pr\u00e9c\u00e9dent",
+          dayNames: [
+            "dimanche",
+            "lundi",
+            "mardi",
+            "mercredi",
+            "jeudi",
+            "vendredi",
+            "samedi",
+          ],
+          dayNamesShort: ["dim", "lun", "mar", "mer", "jeu", "ven", "sam"],
+          dayNamesMin: ["D", "L", "M", "M", "J", "V", "S"],
+          dateFormat: "d MM yy",
+          firstDay: 1,
+          isRTL: false,
+        })
+      })
+    </script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/booked/assets/js/spin.min.js?ver=2.0.1"
+      id="booked-spin-js-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/booked/assets/js/spin.jquery.js?ver=2.0.1"
+      id="booked-spin-jquery-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/booked/assets/js/tooltipster/js/jquery.tooltipster.min.js?ver=3.3.0"
+      id="booked-tooltipster-js"
+    ></script>
+    <script type="text/javascript" id="booked-functions-js-extra">
+      /* <![CDATA[ */
+      var booked_js_vars = {
+        ajax_url:
+          "http:\/\/mqixntn.cluster031.hosting.ovh.net\/wp-admin\/admin-ajax.php",
+        profilePage: "",
+        publicAppointments: "",
+        i18n_confirm_appt_delete:
+          "Are you sure you want to cancel this appointment?",
+        i18n_please_wait: "Please wait ...",
+        i18n_wrong_username_pass: "Wrong username\/password combination.",
+        i18n_fill_out_required_fields: "Please fill out all required fields.",
+        i18n_guest_appt_required_fields:
+          "Please enter your name to book an appointment.",
+        i18n_appt_required_fields:
+          "Please enter your name, your email address and choose a password to book an appointment.",
+        i18n_appt_required_fields_guest:
+          'Please fill in all "Information" fields.',
+        i18n_password_reset:
+          "Please check your email for instructions on resetting your password.",
+        i18n_password_reset_error: "That username or email is not recognized.",
+      }
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/booked/assets/js/functions.js?ver=2.3.5"
+      id="booked-functions-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/uploads/bb-plugin/cache/11419-layout.js?ver=fee6d8f994afb9af8511072f4e62b347"
+      id="fl-builder-layout-11419-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.4"
+      defer
+      async
+      id="tp-tools-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.4"
+      defer
+      async
+      id="revmin-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70"
+      id="jquery-blockui-js"
+    ></script>
+    <script type="text/javascript" id="wc-add-to-cart-js-extra">
+      /* <![CDATA[ */
+      var wc_add_to_cart_params = {
+        ajax_url: "\/wp-admin\/admin-ajax.php",
+        wc_ajax_url: "\/?wc-ajax=%%endpoint%%",
+        i18n_view_cart: "Voir le panier",
+        cart_url: "http:\/\/mqixntn.cluster031.hosting.ovh.net\/?page_id=13252",
+        is_cart: "",
+        cart_redirect_after_add: "no",
+      }
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=5.5.2"
+      id="wc-add-to-cart-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4"
+      id="js-cookie-js"
+    ></script>
+    <script type="text/javascript" id="woocommerce-js-extra">
+      /* <![CDATA[ */
+      var woocommerce_params = {
+        ajax_url: "\/wp-admin\/admin-ajax.php",
+        wc_ajax_url: "\/?wc-ajax=%%endpoint%%",
+      }
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=5.5.2"
+      id="woocommerce-js"
+    ></script>
+    <script type="text/javascript" id="vamtam-all-js-extra">
+      /* <![CDATA[ */
+      var VAMTAM_FRONT = {
+        ajaxurl:
+          "http:\/\/mqixntn.cluster031.hosting.ovh.net\/wp-admin\/admin-ajax.php",
+        jspath:
+          "http:\/\/mqixntn.cluster031.hosting.ovh.net\/wp-content\/themes\/mann\/vamtam\/assets\/js\/",
+        mobile_header_breakpoint: "900px",
+        cube_path:
+          "http:\/\/mqixntn.cluster031.hosting.ovh.net\/wp-content\/themes\/mann\/vamtam\/assets\/cubeportfolio\/",
+        beaver_responsive: "992",
+        beaver_small: "768",
+        content_width: "1260",
+      }
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/themes/mann/vamtam/assets/js/all.min.js?ver=1628062783"
+      id="vamtam-all-js"
+    ></script>
+    <script type="text/javascript" id="wc-cart-fragments-js-extra">
+      /* <![CDATA[ */
+      var wc_cart_fragments_params = {
+        ajax_url: "\/wp-admin\/admin-ajax.php",
+        wc_ajax_url: "\/?wc-ajax=%%endpoint%%",
+        cart_hash_key: "wc_cart_hash_8cdb1847afaa88f8ba3c997f94e5dd89",
+        fragment_name: "wc_fragments_8cdb1847afaa88f8ba3c997f94e5dd89",
+        request_timeout: "5000",
+      }
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=5.5.2"
+      id="wc-cart-fragments-js"
+    ></script>
+    <script type="text/javascript" id="wc-cart-fragments-js-after">
+      jQuery("body").bind("wc_fragments_refreshed", function () {
+        var jetpackLazyImagesLoadEvent
+        try {
+          jetpackLazyImagesLoadEvent = new Event("jetpack-lazy-images-load", {
+            bubbles: true,
+            cancelable: true,
+          })
+        } catch (e) {
+          jetpackLazyImagesLoadEvent = document.createEvent("Event")
+          jetpackLazyImagesLoadEvent.initEvent(
+            "jetpack-lazy-images-load",
+            true,
+            true
+          )
+        }
+        jQuery("body").get(0).dispatchEvent(jetpackLazyImagesLoadEvent)
+      })
+    </script>
+    <script type="text/javascript" id="booked-fea-js-js-extra">
+      /* <![CDATA[ */
+      var booked_fea_vars = {
+        ajax_url:
+          "http:\/\/mqixntn.cluster031.hosting.ovh.net\/wp-admin\/admin-ajax.php",
+        i18n_confirm_appt_delete:
+          "Are you sure you want to cancel this appointment?",
+        i18n_confirm_appt_approve:
+          "Are you sure you want to approve this appointment?",
+      }
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/booked/includes/add-ons/frontend-agents/js/functions.js?ver=2.3.5"
+      id="booked-fea-js-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-includes/js/hoverIntent.min.js?ver=1.8.1"
+      id="hoverIntent-js"
+    ></script>
+    <script type="text/javascript" id="megamenu-js-extra">
+      /* <![CDATA[ */
+      var megamenu = { timeout: "300", interval: "100" }
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=2.9.4"
+      id="megamenu-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-includes/js/wp-embed.min.js?ver=5.8"
+      id="wp-embed-js"
+    ></script>
+    <script type="text/javascript" id="jetpack-carousel-js-extra">
+      /* <![CDATA[ */
+      var jetpackSwiperLibraryPath = {
+        url: "http:\/\/mqixntn.cluster031.hosting.ovh.net\/wp-content\/plugins\/jetpack\/_inc\/build\/carousel\/swiper-bundle.min.js",
+      }
+      var jetpackCarouselStrings = {
+        widths: [370, 700, 1000, 1200, 1400, 2000],
+        is_logged_in: "",
+        lang: "fr",
+        ajaxurl:
+          "http:\/\/mqixntn.cluster031.hosting.ovh.net\/wp-admin\/admin-ajax.php",
+        nonce: "6e7dbd8769",
+        display_exif: "1",
+        display_comments: "1",
+        display_geo: "1",
+        single_image_gallery: "1",
+        single_image_gallery_media_file: "",
+        background_color: "black",
+        comment: "Commentaire",
+        post_comment: "Laisser un commentaire",
+        write_comment: "\u00c9crire un commentaire...",
+        loading_comments: "Chargement des commentaires\u2026",
+        download_original:
+          'Afficher dans sa taille r\u00e9elle <span class="photo-size">{0}<span class="photo-size-times">\u00d7<\/span>{1}<\/span>.',
+        no_comment_text:
+          "Veuillez ajouter du contenu \u00e0 votre commentaire.",
+        no_comment_email: "Merci de renseigner une adresse e-mail.",
+        no_comment_author: "Merci de renseigner votre nom.",
+        comment_post_error:
+          "Une erreur s'est produite \u00e0 la publication de votre commentaire. Veuillez nous en excuser, et r\u00e9essayer dans quelques instants.",
+        comment_approved: "Votre commentaire a \u00e9t\u00e9 approuv\u00e9.",
+        comment_unapproved: "Votre commentaire est en attente de validation.",
+        camera: "Appareil photo",
+        aperture: "Ouverture",
+        shutter_speed: "Vitesse d'obturation",
+        focal_length: "Focale",
+        copyright: "Copyright",
+        comment_registration: "0",
+        require_name_email: "1",
+        login_url:
+          "http:\/\/mqixntn.cluster031.hosting.ovh.net\/wp-login.php?redirect_to=http%3A%2F%2Fmqixntn.cluster031.hosting.ovh.net%2F",
+        blog_id: "1",
+        meta_data: [
+          "camera",
+          "aperture",
+          "shutter_speed",
+          "focal_length",
+          "copyright",
+        ],
+      }
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/jetpack/_inc/build/carousel/jetpack-carousel.min.js?ver=10.0"
+      id="jetpack-carousel-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/themes/mann/vamtam/assets/js/build/sticky-header.min.js?ver=1628062783"
+      id="vamtam-sticky-header-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://mqixntn.cluster031.hosting.ovh.net/wp-content/plugins/vamtam-elements-b/assets/fl-photo.js?ver=5.8"
+      id="vamtam-fl-photo-js"
+    ></script>
+    <script type="text/javascript" id="rs-initialisation-scripts">
+      var tpj = jQuery
+
+      var revapi5, revapi4, revapi9, revapi3
+
+      if (window.RS_MODULES === undefined) window.RS_MODULES = {}
+      if (RS_MODULES.modules === undefined) RS_MODULES.modules = {}
+      RS_MODULES.modules["revslider51"] = {
+        init: function () {
+          revapi5 = jQuery("#rev_slider_5_1")
+          if (revapi5 == undefined || revapi5.revolution == undefined) {
+            revslider_showDoubleJqueryError("rev_slider_5_1")
+            return
+          }
+          revapi5.revolutionInit({
+            DPR: "dpr",
+            sliderLayout: "fullwidth",
+            duration: 3500,
+            visibilityLevels: "1240,1024,778,480",
+            gridwidth: "1370,1280,900,480",
+            gridheight: "600,600,500,500",
+            minHeight: 600,
+            autoHeight: true,
+            lazyType: "single",
+            spinner: "spinner3",
+            perspective: 600,
+            perspectiveType: "local",
+            editorheight: "600,600,500,500",
+            responsiveLevels: "1240,1024,778,480",
+            stopAtSlide: 7,
+            stopAfterLoops: 0,
+            stopLoop: true,
+            progressBar: { disableProgressBar: true },
+            navigation: {
+              keyboardNavigation: true,
+              mouseScrollNavigation: false,
+              wheelCallDelay: 1000,
+              onHoverStop: false,
+              touch: {
+                touchenabled: true,
+                touchOnDesktop: true,
+              },
+            },
+            fanim: {
+              in: { o: 0 },
+              out: { a: false },
+              speed: 300,
+            },
+            viewPort: {
+              global: true,
+              globalDist: "-200px",
+              enable: true,
+              visible_area: "20%",
+            },
+            fallbacks: {
+              allowHTML5AutoPlayOnAndroid: true,
+            },
+          })
+        },
+      } // End of RevInitScript
+
+      if (window.RS_MODULES === undefined) window.RS_MODULES = {}
+      if (RS_MODULES.modules === undefined) RS_MODULES.modules = {}
+      RS_MODULES.modules["revslider42"] = {
+        init: function () {
+          revapi4 = jQuery("#rev_slider_4_2")
+          if (revapi4 == undefined || revapi4.revolution == undefined) {
+            revslider_showDoubleJqueryError("rev_slider_4_2")
+            return
+          }
+          revapi4.revolutionInit({
+            DPR: "dpr",
+            visibilityLevels: "1240,1240,778,480",
+            gridwidth: "1280,1280,900,480",
+            gridheight: "700,700,650,850",
+            lazyType: "all",
+            spinner: "spinner2",
+            perspective: 600,
+            perspectiveType: "local",
+            editorheight: "700,700,650,850",
+            responsiveLevels: "1240,1240,778,480",
+            progressBar: { disableProgressBar: true },
+            navigation: {
+              keyboardNavigation: true,
+              mouseScrollNavigation: false,
+              wheelCallDelay: 1000,
+              onHoverStop: false,
+              touch: {
+                touchenabled: true,
+                touchOnDesktop: true,
+              },
+            },
+            viewPort: {
+              global: true,
+              globalDist: "-200px",
+              enable: true,
+              visible_area: "20%",
+            },
+            fallbacks: {
+              allowHTML5AutoPlayOnAndroid: true,
+            },
+          })
+        },
+      } // End of RevInitScript
+
+      if (window.RS_MODULES === undefined) window.RS_MODULES = {}
+      if (RS_MODULES.modules === undefined) RS_MODULES.modules = {}
+      RS_MODULES.modules["revslider93"] = {
+        init: function () {
+          revapi9 = jQuery("#rev_slider_9_3")
+          if (revapi9 == undefined || revapi9.revolution == undefined) {
+            revslider_showDoubleJqueryError("rev_slider_9_3")
+            return
+          }
+          revapi9.revolutionInit({
+            DPR: "dpr",
+            visibilityLevels: "1240,1240,778,480",
+            gridwidth: "1280,1280,900,480",
+            gridheight: "600,600,600,840",
+            lazyType: "all",
+            spinner: "spinner2",
+            perspective: 600,
+            perspectiveType: "local",
+            editorheight: "600,600,600,840",
+            responsiveLevels: "1240,1240,778,480",
+            progressBar: { disableProgressBar: true },
+            navigation: {
+              keyboardNavigation: true,
+              mouseScrollNavigation: false,
+              wheelCallDelay: 1000,
+              onHoverStop: false,
+              touch: {
+                touchenabled: true,
+                touchOnDesktop: true,
+              },
+              arrows: {
+                enable: true,
+                style: "hephaistos",
+                left: {
+                  container: "layergrid",
+                },
+                right: {
+                  container: "layergrid",
+                },
+              },
+            },
+            viewPort: {
+              global: true,
+              globalDist: "-200px",
+              enable: false,
+              visible_area: "20%",
+            },
+            fallbacks: {
+              allowHTML5AutoPlayOnAndroid: true,
+            },
+          })
+        },
+      } // End of RevInitScript
+
+      if (window.RS_MODULES === undefined) window.RS_MODULES = {}
+      if (RS_MODULES.modules === undefined) RS_MODULES.modules = {}
+      RS_MODULES.modules["revslider34"] = {
+        init: function () {
+          revapi3 = jQuery("#rev_slider_3_4")
+          if (revapi3 == undefined || revapi3.revolution == undefined) {
+            revslider_showDoubleJqueryError("rev_slider_3_4")
+            return
+          }
+          revapi3.revolutionInit({
+            DPR: "dpr",
+            sliderLayout: "fullwidth",
+            duration: 6000,
+            visibilityLevels: "1240,1240,778,480",
+            gridwidth: "1400,1400,900,480",
+            gridheight: "420,420,400,300",
+            lazyType: "all",
+            spinner: "spinner2",
+            perspective: 600,
+            perspectiveType: "local",
+            editorheight: "420,768,400,300",
+            responsiveLevels: "1240,1240,778,480",
+            progressBar: { disableProgressBar: true },
+            navigation: {
+              onHoverStop: false,
+            },
+            parallax: {
+              levels: [
+                2, 5, 10, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55,
+              ],
+              type: "mouse",
+            },
+            viewPort: {
+              global: true,
+              globalDist: "-200px",
+              enable: true,
+              visible_area: "20%",
+            },
+            fallbacks: {
+              allowHTML5AutoPlayOnAndroid: true,
+            },
+          })
+        },
+      } // End of RevInitScript
+
+      if (window.RS_MODULES.checkMinimal !== undefined) {
+        window.RS_MODULES.checkMinimal()
+      }
+    </script>
+    <!-- W3TC-include-js-head -->
+  </body>
+</html>
