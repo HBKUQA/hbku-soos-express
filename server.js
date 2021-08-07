@@ -4,7 +4,7 @@ const app = express()
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.get('/home', function (req, res) {
+app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'public/landing', 'index.html'))
 })
 
@@ -18,4 +18,6 @@ app.get('/program/:programId/:chapterId', function (req, res) {
   res.sendFile(path.join(__dirname, 'public/build', 'index.html'))
 })
 
-app.listen(9000)
+app.listen(9000, () => {
+  console.log('http://localhost:9000')
+})
