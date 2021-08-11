@@ -893,8 +893,17 @@
       .jp-carousel-info {
         display: none !important;
       }
+      .team-member-container {
+        display: grid;
+        gap: 1em;
+        align-items: stretch;
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      .team-member-container .fl-module-content,
+      .fl-module-vamtam-team-member,
       .team-member {
-        height: 355px;
+        height: 100%;
       }
       .team-member .team-member-info h5 {
         text-transform: none !important;
