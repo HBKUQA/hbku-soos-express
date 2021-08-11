@@ -962,7 +962,7 @@ img.mfp-img {
   background-size: cover;
 }
 .fl-builder-mobile .fl-node-5b048eac21191 > .fl-row-content-wrap {
-  background-image: url(http:/landing/assets/images/background-gray-dots.svg);
+  background-image: url(/landing/assets/images/background-gray-dots.svg);
   background-position: center center;
   background-attachment: scroll;
 }
