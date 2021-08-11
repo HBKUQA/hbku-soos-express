@@ -893,11 +893,30 @@
       .jp-carousel-info {
         display: none !important;
       }
+
       .team-member-container {
         display: grid;
         gap: 1em;
         align-items: stretch;
         grid-template-columns: repeat(6, 1fr);
+      }
+
+      @media screen and (max-width: 1175px) {
+        .team-member-container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        .team-member-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        .team-member-container {
+          grid-template-columns: repeat(1, 1fr);
+        }
       }
 
       .team-member-container .fl-module-content,
