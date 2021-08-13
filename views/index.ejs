@@ -1121,6 +1121,7 @@
                                     <a
                                       href="https://orientationapi.hbku.edu.qa/saml_login"
                                       target="_self"
+                                      id="login-button-top"
                                       class="
                                         vamtam-button
                                         accent1
@@ -2592,16 +2593,29 @@
       })(window, document, [].slice)
     </script>
 
-    <noscript
-      ><a href="https://www.livechatinc.com/chat-with/12672822/" rel="nofollow"
-        >Chat with us</a
-      >, powered by
+    <script>
+      const loginButtonBottom = document.getElementById("login-button-bottom")
+      const loginButtonTop = document.getElementById("login-button-top")
+      const token = localStorage.getItem("api-token")
+
+      if (token) {
+        loginButtonTop.setAttribute("href", "/programs")
+        loginButtonBottom.setAttribute("href", "/programs")
+      }
+    </script>
+
+    <noscript>
+      <a href="https://www.livechatinc.com/chat-with/12672822/" rel="nofollow">
+        Chat with us
+      </a>
+      , powered by
       <a
         href="https://www.livechatinc.com/?welcome"
         rel="noopener nofollow"
         target="_blank"
-        >LiveChat</a
-      ></noscript
-    >
+      >
+        LiveChat
+      </a>
+    </noscript>
   </body>
 </html>
