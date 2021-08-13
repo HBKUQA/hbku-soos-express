@@ -1,0 +1,300 @@
+#ui-datepicker-div.booked_custom_date_picker
+  table.ui-datepicker-calendar
+  tbody
+  td
+  a.ui-state-active,
+#ui-datepicker-div.booked_custom_date_picker
+  table.ui-datepicker-calendar
+  tbody
+  td
+  a.ui-state-active:hover,
+body #booked-profile-page input[type="submit"].button-primary:hover,
+body .booked-list-view button.button:hover,
+body .booked-list-view input[type="submit"].button-primary:hover,
+body table.booked-calendar input[type="submit"].button-primary:hover,
+body .booked-modal input[type="submit"].button-primary:hover,
+body table.booked-calendar th,
+body table.booked-calendar thead,
+body table.booked-calendar thead th,
+body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,
+body #booked-profile-page .booked-profile-header,
+body #booked-profile-page .booked-tabs li.active a,
+body #booked-profile-page .booked-tabs li.active a:hover,
+body #booked-profile-page .appt-block .google-cal-button > a:hover,
+#ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header {
+  background: #3813c2 !important;
+}
+
+body #booked-profile-page input[type="submit"].button-primary:hover,
+body table.booked-calendar input[type="submit"].button-primary:hover,
+body .booked-list-view button.button:hover,
+body .booked-list-view input[type="submit"].button-primary:hover,
+body .booked-modal input[type="submit"].button-primary:hover,
+body table.booked-calendar th,
+body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,
+body #booked-profile-page .booked-profile-header,
+body #booked-profile-page .appt-block .google-cal-button > a:hover {
+  border-color: #3813c2 !important;
+}
+
+body table.booked-calendar tr.days,
+body table.booked-calendar tr.days th,
+body .booked-calendarSwitcher.calendar,
+body #booked-profile-page .booked-tabs,
+#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead,
+#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead th {
+  background: #0088ce !important;
+}
+
+body table.booked-calendar tr.days th,
+body #booked-profile-page .booked-tabs {
+  border-color: #0088ce !important;
+}
+
+#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-today a,
+#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-today a:hover,
+body #booked-profile-page input[type=submit].button-primary,
+body table.booked-calendar input[type=submit].button-primary,
+body .booked-list-view button.button,
+body .booked-list-view input[type=submit].button-primary,
+body .booked-list-view button.button,
+body .booked-list-view input[type=submit].button-primary,
+body .booked-modal input[type=submit].button-primary,
+body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,
+body #booked-profile-page .booked-profile-appt-list .appt-block.approved .status-block,
+body #booked-profile-page .appt-block .google-cal-button>a,
+body .booked-modal p.booked-title-bar,
+body table.booked-calendar td:hover .date span,
+body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active,
+body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active:hover,
+.booked-ms-modal .booked-book-appt
+
+/* Multi-Slot Booking */ {
+  background: #3813c2;
+}
+
+body #booked-profile-page input[type="submit"].button-primary,
+body table.booked-calendar input[type="submit"].button-primary,
+body .booked-list-view button.button,
+body .booked-list-view input[type="submit"].button-primary,
+body .booked-list-view button.button,
+body .booked-list-view input[type="submit"].button-primary,
+body .booked-modal input[type="submit"].button-primary,
+body #booked-profile-page .appt-block .google-cal-button > a,
+body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,
+body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active,
+body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active:hover {
+  border-color: #3813c2;
+}
+
+body .booked-modal .bm-window p i.fa,
+body .booked-modal .bm-window a,
+body .booked-appt-list .booked-public-appointment-title,
+body .booked-modal .bm-window p.appointment-title,
+.booked-ms-modal.visible:hover .booked-book-appt {
+  color: #3813c2;
+}
+
+.booked-appt-list .timeslot.has-title .booked-public-appointment-title {
+  color: inherit;
+}
+:root {
+  --vamtam-site-max-width: 1260px;
+  --vamtam-body-background-background-image: none;
+  --vamtam-body-background-background-color: #ffffff;
+  --vamtam-body-background-background-repeat: no-repeat;
+  --vamtam-body-background-background-attachment: scroll;
+  --vamtam-body-background-background-size: cover;
+  --vamtam-body-background-background-position: center center;
+  --vamtam-accent-color-1: #3813c2;
+  --vamtam-accent-color-2: #0088ce;
+  --vamtam-accent-color-3: #06163a;
+  --vamtam-accent-color-4: #d8d8d8;
+  --vamtam-accent-color-5: #ffffff;
+  --vamtam-accent-color-6: #000000;
+  --vamtam-accent-color-7: #dfdfdf;
+  --vamtam-accent-color-8: #ffffff;
+  --vamtam-accent-color-1-hc: #ffffff;
+  --vamtam-accent-color-2-hc: #ffffff;
+  --vamtam-accent-color-3-hc: #ffffff;
+  --vamtam-accent-color-4-hc: #000000;
+  --vamtam-accent-color-5-hc: #000000;
+  --vamtam-accent-color-6-hc: #ffffff;
+  --vamtam-accent-color-7-hc: #000000;
+  --vamtam-accent-color-8-hc: #000000;
+  --vamtam-h1-font-family: "Roboto";
+  --vamtam-h1-font-size: 52px;
+  --vamtam-h1-font-weight: bold;
+  --vamtam-h1-font-style: normal;
+  --vamtam-h1-line-height: 1.12;
+  --vamtam-h1-color: #000000;
+  --vamtam-h2-font-family: "Roboto";
+  --vamtam-h2-font-size: 40px;
+  --vamtam-h2-font-weight: bold;
+  --vamtam-h2-font-style: normal;
+  --vamtam-h2-line-height: 1.35;
+  --vamtam-h2-color: #091427;
+  --vamtam-h3-font-family: "Roboto";
+  --vamtam-h3-font-size: 28px;
+  --vamtam-h3-font-weight: 500;
+  --vamtam-h3-font-style: normal;
+  --vamtam-h3-line-height: 1.21;
+  --vamtam-h3-color: #121559;
+  --vamtam-h4-font-family: "Roboto";
+  --vamtam-h4-font-size: 22px;
+  --vamtam-h4-font-weight: 500;
+  --vamtam-h4-font-style: normal;
+  --vamtam-h4-line-height: 1.27;
+  --vamtam-h4-color: #121559;
+  --vamtam-h5-font-family: "Roboto";
+  --vamtam-h5-font-size: 16px;
+  --vamtam-h5-font-weight: normal;
+  --vamtam-h5-font-style: normal;
+  --vamtam-h5-line-height: 1.5;
+  --vamtam-h5-color: #121559;
+  --vamtam-h6-font-family: "Roboto";
+  --vamtam-h6-font-size: 12px;
+  --vamtam-h6-font-weight: normal;
+  --vamtam-h6-font-style: normal;
+  --vamtam-h6-line-height: 1.17;
+  --vamtam-h6-color: #121559;
+  --vamtam-em-font-family: "Roboto";
+  --vamtam-em-font-size: 16px;
+  --vamtam-em-font-weight: normal;
+  --vamtam-em-font-style: italic;
+  --vamtam-em-line-height: 1.63;
+  --vamtam-em-color: #3f485d;
+  --vamtam-additional-font-1-font-family: "Rubik";
+  --vamtam-additional-font-1-font-size: 90px;
+  --vamtam-additional-font-1-font-weight: 300;
+  --vamtam-additional-font-1-font-style: normal;
+  --vamtam-additional-font-1-line-height: 0.89;
+  --vamtam-additional-font-1-color: #3813c2;
+  --vamtam-additional-font-2-font-family: "Rubik";
+  --vamtam-additional-font-2-font-size: 70px;
+  --vamtam-additional-font-2-font-weight: bold;
+  --vamtam-additional-font-2-font-style: normal;
+  --vamtam-additional-font-2-line-height: 1;
+  --vamtam-additional-font-2-color: #3813c2;
+  --vamtam-header-height: 70px;
+  --vamtam-header-background-background-image: none;
+  --vamtam-header-background-background-color: #ffffff;
+  --vamtam-header-background-background-repeat: repeat;
+  --vamtam-header-background-background-attachment: scroll;
+  --vamtam-header-background-background-size: auto;
+  --vamtam-header-background-background-position: left top;
+  --vamtam-sub-header-background-background-image: none;
+  --vamtam-sub-header-background-background-color: #e2e2e2;
+  --vamtam-sub-header-background-background-repeat: repeat;
+  --vamtam-sub-header-background-background-attachment: fixed;
+  --vamtam-sub-header-background-background-size: auto;
+  --vamtam-sub-header-background-background-position: left top;
+  --vamtam-page-title-background-background-image: none;
+  --vamtam-page-title-background-background-color: ;
+  --vamtam-page-title-background-background-repeat: repeat;
+  --vamtam-page-title-background-background-attachment: fixed;
+  --vamtam-page-title-background-background-size: auto;
+  --vamtam-page-title-background-background-position: left top;
+  --vamtam-logo-font-family: "Roboto";
+  --vamtam-logo-font-size: 22px;
+  --vamtam-logo-font-weight: bold;
+  --vamtam-logo-font-style: normal;
+  --vamtam-logo-line-height: 0.91;
+  --vamtam-logo-color: #3813c2;
+  --vamtam-main-menu-text-sticky-color: #ffffff;
+  --vamtam-left-sidebar-width: 30%;
+  --vamtam-right-sidebar-width: 30%;
+  --vamtam-main-background-background-image: none;
+  --vamtam-main-background-background-color: #ffffff;
+  --vamtam-main-background-background-repeat: repeat;
+  --vamtam-main-background-background-attachment: scroll;
+  --vamtam-main-background-background-size: auto;
+  --vamtam-main-background-background-position: left top;
+  --vamtam-primary-font-font-family: "Roboto";
+  --vamtam-primary-font-font-size: 16px;
+  --vamtam-primary-font-font-weight: normal;
+  --vamtam-primary-font-font-style: normal;
+  --vamtam-primary-font-line-height: 1.63;
+  --vamtam-primary-font-color: #4f4f50;
+  --vamtam-body-link-regular: #000000;
+  --vamtam-body-link-hover: #0088ce;
+  --vamtam-body-link-visited: #000000;
+  --vamtam-body-link-active: #3813c2;
+  --vamtam-footer-sidebars-titles-font-family: "Rubik";
+  --vamtam-footer-sidebars-titles-font-size: 20px;
+  --vamtam-footer-sidebars-titles-font-weight: 500;
+  --vamtam-footer-sidebars-titles-font-style: normal;
+  --vamtam-footer-sidebars-titles-line-height: 1.2;
+  --vamtam-footer-sidebars-titles-color: #1f1957;
+  --vamtam-footer-sidebars-titles-letter-spacing: normal;
+  --vamtam-mobile-top-bar-resolution: 900px;
+  --vamtam-beaver-global-row_margins: 0px;
+  --vamtam-beaver-global-row_margins_unit: px;
+  --vamtam-beaver-global-row_margins_medium_unit: px;
+  --vamtam-beaver-global-row_margins_responsive_unit: px;
+  --vamtam-beaver-global-row_padding: 20px;
+  --vamtam-beaver-global-row_padding_unit: px;
+  --vamtam-beaver-global-row_padding_medium_unit: px;
+  --vamtam-beaver-global-row_padding_responsive: 10px;
+  --vamtam-beaver-global-row_padding_responsive_unit: px;
+  --vamtam-beaver-global-row_content_width_default: fixed;
+  --vamtam-beaver-global-column_margins: 0px;
+  --vamtam-beaver-global-column_margins_unit: px;
+  --vamtam-beaver-global-column_margins_medium_unit: px;
+  --vamtam-beaver-global-column_margins_responsive_unit: px;
+  --vamtam-beaver-global-column_padding: 0px;
+  --vamtam-beaver-global-column_padding_unit: px;
+  --vamtam-beaver-global-column_padding_medium_unit: px;
+  --vamtam-beaver-global-column_padding_responsive_unit: px;
+  --vamtam-beaver-global-module_margins: 10px;
+  --vamtam-beaver-global-module_margins_unit: px;
+  --vamtam-beaver-global-module_margins_medium_unit: px;
+  --vamtam-beaver-global-module_margins_responsive_unit: px;
+  --vamtam-beaver-global-responsive_enabled: 1;
+  --vamtam-beaver-global-auto_spacing: 1;
+  --vamtam-beaver-global-medium_breakpoint: 992;
+  --vamtam-beaver-global-responsive_breakpoint: 768;
+  --vamtam-beaver-global-responsive_preview: ;
+  --vamtam-beaver-global-responsive_col_max_width: 1px;
+  --vamtam-beaver-global-responsive_base_fontsize: 16px;
+  --vamtam-beaver-global-row_width: 1280px;
+  --vamtam-beaver-global-row_width_unit: px;
+  --vamtam-beaver-global-show_default_heading: ;
+  --vamtam-default-bg-color: #ffffff;
+  --vamtam-default-line-color: #dfdfdf;
+  --vamtam-small-padding: 20px;
+  --vamtam-horizontal-padding: 50px;
+  --vamtam-vertical-padding: 30px;
+  --vamtam-horizontal-padding-large: 60px;
+  --vamtam-vertical-padding-large: 60px;
+  --vamtam-no-border-link: none;
+  --vamtam-border-radius: 0px;
+  --vamtam-border-radius-oval: 0px;
+  --vamtam-overlay-color: #000000;
+  --vamtam-overlay-color-hc: #ffffff;
+  --vamtam-box-outer-padding: 60px;
+  --vamtam-loading-animation: url("/landing/assets/images/loader-ring.gif");
+  --vamtam-accent-color-1-rgb: 56, 19, 194;
+  --vamtam-accent-color-2-rgb: 0, 136, 206;
+  --vamtam-accent-color-3-rgb: 6, 22, 58;
+  --vamtam-accent-color-4-rgb: 216, 216, 216;
+  --vamtam-accent-color-5-rgb: 255, 255, 255;
+  --vamtam-accent-color-6-rgb: 0, 0, 0;
+  --vamtam-accent-color-7-rgb: 223, 223, 223;
+  --vamtam-accent-color-8-rgb: 255, 255, 255;
+}
+/* [class*="gallery-columns-"].gallery-columns-5 .gallery-item {
+  width: 19% !important;
+} */
+img.wp-smiley,
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 0.07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}

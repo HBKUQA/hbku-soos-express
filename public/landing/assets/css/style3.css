@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "icomoon";
+  src: url(/landing/assets/fonts/icons/icomoon.woff2) format("woff2"),
+    url(/landing/assets/fonts/icons/icomoon.woff) format("woff"),
+    url(/landing/assets/fonts/icons/icomoon.ttf) format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "theme";
+  src: url(/landing/assets/fonts/theme-icons/theme-icons.woff2) format("woff2"),
+    url(/landing/assets/fonts/theme-icons/theme-icons.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Make Beaver options play nice with the theme */
+
+.vamtam-box-outer-padding,
+.limit-wrapper,
+.header-padding {
+  padding-left: calc(
+    var(--vamtam-box-outer-padding) +
+      var(--vamtam-block-margin-desktop-left, var(--vamtam-beaver-global-module_margins))
+  );
+  padding-right: calc(
+    var(--vamtam-box-outer-padding) +
+      var(--vamtam-block-margin-desktop-right, var(--vamtam-beaver-global-module_margins))
+  );
+}
+
+body:not(.single-tribe_events):not(.post-type-archive).fl-builder #main > .limit-wrapper,
+body .fl-row-content-wrap {
+  padding-left: var(--vamtam-box-outer-padding);
+  padding-right: var(--vamtam-box-outer-padding);
+}
+
+body:not(.single-tribe_events):not(.post-type-archive).fl-builder #main > .limit-wrapper {
+  max-width: calc(var(--vamtam-site-max-width) + 2 * var(--vamtam-beaver-global-module_margins));
+}
+
+.vamtam-box-outer-padding .vamtam-box-outer-padding,
+body .vamtam-box-outer-padding .fl-row-content-wrap,
+.limit-wrapper .limit-wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body .post-content .fl-row-full-width .fl-row-fixed-width {
+  padding-left: calc(
+    20px + var(--vamtam-block-margin-desktop-left, var(--vamtam-beaver-global-module_margins))
+  );
+  padding-right: calc(
+    20px + var(--vamtam-block-margin-desktop-right, var(--vamtam-beaver-global-module_margins))
+  );
+}
+
+@media (max-width: 1460px) {
+  .post-siblings {
+    display: none;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1260px) {
+  .vamtam-box-outer-padding,
+  .limit-wrapper,
+  .header-padding {
+    padding-left: calc(
+      30px + var(--vamtam-block-margin-desktop-left, var(--vamtam-beaver-global-module_margins))
+    );
+    padding-right: calc(
+      30px + var(--vamtam-block-margin-desktop-right, var(--vamtam-beaver-global-module_margins))
+    );
+  }
+
+  body:not(.single-tribe_events):not(.post-type-archive).fl-builder #main > .limit-wrapper,
+  body .fl-row-content-wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  body .post-content .fl-row-full-width .fl-row-fixed-width {
+    padding-left: calc(20px + var(--vamtam-beaver-global-module_margins));
+    padding-right: calc(20px + var(--vamtam-beaver-global-module_margins));
+  }
+
+  body.single-post .post-content .fl-row-fixed-width {
+    max-width: 840px;
+  }
+}
+
+@media (max-width: 992px) {
+  .vamtam-box-outer-padding,
+  .limit-wrapper,
+  .header-padding {
+    padding-left: calc(
+      20px + var(--vamtam-block-margin-tablet-left, var(--vamtam-beaver-global-module_margins))
+    );
+    padding-right: calc(
+      20px + var(--vamtam-block-margin-tablet-right, var(--vamtam-beaver-global-module_margins))
+    );
+  }
+  .team-member .team-member-info h5 {
+    text-transform: none !important;
+  }
+  body:not(.single-tribe_events):not(.post-type-archive).fl-builder #main > .limit-wrapper,
+  body .fl-row-content-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  body .post-content .fl-row-full-width .fl-row-fixed-width {
+    padding-left: calc(10px + var(--vamtam-beaver-global-module_margins));
+    padding-right: calc(10px + var(--vamtam-beaver-global-module_margins));
+  }
+
+  body:not(.single-tribe_events):not(.post-type-archive).fl-builder
+    #main:not(.layout-full)
+    .limit-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  body .post-content .fl-row-full-width .fl-row-fixed-width,
+  body #main:not(.layout-full) .fl-builder-content > .fl-row-full-width .fl-row-fixed-width,
+  body #main:not(.layout-full) .fl-builder-content > .fl-row-full-width .fl-row-full-width,
+  body #main:not(.layout-full) .fl-builder-content > .fl-row-fixed-width {
+    padding-left: calc(
+      10px + var(--vamtam-block-margin-tablet-left, var(--vamtam-beaver-global-module_margins))
+    );
+    padding-right: calc(
+      10px + var(--vamtam-block-margin-tablet-right, var(--vamtam-beaver-global-module_margins))
+    );
+  }
+}
+
+@media (max-width: 768px) {
+  .vamtam-box-outer-padding,
+  .limit-wrapper,
+  .header-padding {
+    padding-left: calc(
+      10px + var(--vamtam-block-margin-phone-left, var(--vamtam-beaver-global-module_margins))
+    );
+    padding-right: calc(
+      10px + var(--vamtam-block-margin-phone-right, var(--vamtam-beaver-global-module_margins))
+    );
+  }
+
+  body #main:not(.layout-full) .fl-builder-content > .fl-row-full-width .fl-row-fixed-width,
+  body #main:not(.layout-full) .fl-builder-content > .fl-row-full-width .fl-row-full-width,
+  body #main:not(.layout-full) .fl-builder-content > .fl-row-fixed-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+.top-alert {
+  background: #ff0000;
+  font-size: 12px;
+  padding: 1em;
+  color: #fff;
+}
+
+.top-alert p {
+  max-width: 1280px;
+  color: #fff;
+  margin: auto;
+}
+
+.footer-text-message {
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .top-alert {
+    display: none;
+  }
+
+  .footer-text-message {
+    flex-direction: column;
+  }
+  .fl-module-vamtam-heading .vamtam-font-style-2 {
+    font-size: 2em;
+  }
+}

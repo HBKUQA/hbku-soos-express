@@ -3158,3 +3158,65 @@
   text-decoration: none;
   color: #fff;
 }
+.jp-carousel-info {
+  display: none !important;
+}
+
+.team-member-container {
+  display: grid;
+  gap: 1em;
+  align-items: stretch;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+@media screen and (max-width: 1175px) {
+  .team-member-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .team-member-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .team-member-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.team-member-container .fl-module-content,
+.fl-module-vamtam-team-member,
+.team-member {
+  height: 100%;
+}
+.team-member .team-member-info h5 {
+  text-transform: none !important;
+}
+
+.carousel-read-more {
+  position: relative;
+  display: block;
+  left: 4ch;
+  margin-top: 2rem;
+  color: #1f1957 !important;
+}
+
+.carousel-read-more::before {
+  position: absolute;
+  left: -4ch;
+  content: " ";
+  top: calc(50% - 2px);
+  width: 3ch;
+  height: 2px;
+  background: #1f1957;
+  overflow: hidden;
+}
+.carousel-read-more:hover {
+  color: #0088ce !important;
+}
+.carousel-read-more:hover::before {
+  background: #0088ce !important;
+}
