@@ -1091,11 +1091,20 @@
 <script>
   const loginButtonBottom = document.getElementById("login-button-bottom")
   const loginButtonTop = document.getElementById("login-button-top")
-  const startYourOrientationProgram = document.getElementById("startYourOrientationProgram")
-  const startYourOrientationHayakom = document.getElementById("startYourOrientationHayakom")
+  const loginButtonTopDesktop = document.getElementById(
+    "login-button-top-desktop"
+  )
+
+  const startYourOrientationProgram = document.getElementById(
+    "startYourOrientationProgram"
+  )
+  const startYourOrientationHayakom = document.getElementById(
+    "startYourOrientationHayakom"
+  )
   const token = localStorage.getItem("api-token")
 
   if (token) {
+    loginButtonTopDesktop.setAttribute("href", "/programs")
     loginButtonTop.setAttribute("href", "/programs")
     loginButtonBottom.setAttribute("href", "/programs")
     startYourOrientationProgram.setAttribute("href", "/programs")
