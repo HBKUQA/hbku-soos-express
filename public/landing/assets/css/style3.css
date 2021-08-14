@@ -203,7 +203,8 @@ body .post-content .fl-row-full-width .fl-row-fixed-width {
   top: 70% !important;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
+  /* @media screen and (min-width: 768px) { */
   #slider-4-slide-6-layer-6 {
     font-size: 1.8rem !important;
     line-height: 2.5rem !important;
@@ -214,7 +215,7 @@ body .post-content .fl-row-full-width .fl-row-fixed-width {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   #slider-4-slide-6-layer-6 {
     font-size: 3rem !important;
     line-height: 3.2rem !important;
