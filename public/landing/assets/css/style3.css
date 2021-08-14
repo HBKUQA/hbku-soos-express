@@ -227,3 +227,41 @@ body .post-content .fl-row-full-width .fl-row-fixed-width {
     line-height: 3.8rem !important;
   }
 }
+
+#main-header-mobile {
+  background: #1e1656;
+  position: sticky;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  gap: 1em;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+#main-header-desktop {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .header-overlay {
+    padding-top: 0px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #main-header-mobile {
+    display: none;
+  }
+  #main-header-desktop {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #main-header-mobile img {
+    height: 48px;
+  }
+}

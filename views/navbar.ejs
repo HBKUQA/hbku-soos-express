@@ -7,147 +7,194 @@
     Center at qfphcc@qf.org.qa or call 44541244.
   </p>
 </div>
-<header id="main-header">
-  <img
-    src="/static/media/logo_hbku_transparent.png"
-    style="padding-top: 34px"
-  />
-  <a
-    href="https://orientationapi.hbku.edu.qa/user/login"
-    target="_self"
-    id="login-button-top"
-    class="
-      vamtam-button
-      accent1
-      hover-accent2
-      button-solid
-      icon-animation-disable
-    "
-    role="button"
-    style="
-      font-size: 14px;
-      line-height: 16px;
-      padding: 14px 28px;
-      background-color: #0088ce;
-      color: white;
-    "
-  >
-    <span class="vamtam-button-text"> Start Your Orientation </span>
-  </a>
+
+<header id="main-header-mobile">
+  <img src="/static/media/logo_hbku_transparent.png" />
+  <div>
+    <a
+      href="https://orientationapi.hbku.edu.qa/user/login"
+      target="_self"
+      id="login-button-top"
+      class="
+        vamtam-button
+        accent1
+        hover-accent2
+        button-solid
+        icon-animation-disable
+      "
+      role="button"
+      style="
+        font-size: 14px;
+        line-height: 16px;
+        padding: 14px 28px;
+        background-color: #0088ce;
+        color: white;
+      "
+    >
+      <span class="vamtam-button-text"> Start Your Orientation </span>
+    </a>
+  </div>
 </header>
-<!-- class="
-    main-header
-    layout-logo-menu layout-single-row
-    header-content-wrapper header-background
-  " -->
-<!-- 
-    <div class="limit-wrapper header-maybe-limit-wrapper header-padding">
-      <div class="header-contents">
-        <div class="first-row">
-          <div class="logo-wrapper">
-            <div class="logo-tagline">
-             
+<div id="main-header-desktop" style="position: relative">
+  <div style="position: absolute; top: 0px; right: 0px; left: 0px">
+    <div
+      class="fixed-header-box sticky-header-state-reset"
+      style="
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        will-change: transform;
+        transform: translateX(0px);
+      "
+    >
+      <header
+        class="
+          main-header
+          layout-logo-menu layout-single-row
+          header-content-wrapper header-background
+        "
+      >
+        <div class="limit-wrapper header-maybe-limit-wrapper header-padding">
+          <div class="header-contents">
+            <div class="first-row">
+              <div class="logo-wrapper">
+                <div class="logo-tagline">
+                  <img
+                    src="/static/media/logo_hbku_transparent.png"
+                    style="padding-top: 34px"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="second-row">
-          <div id="menus">
-            <nav id="main-menu" class="">
-              <a href="#main" title="Skip to content" class="visuallyhidden"
-                >Skip to content</a
-              >
-            </nav>
-          </div>
-        </div>
-
-        <div class="cart-dropdown vamtam-header-cart-wrapper hidden">
-          <div class="cart-dropdown-inner">
-            <a class="vamtam-cart-dropdown-link" href="#">
-              <span class="icon theme">&#59751;</span>
-              <span class="products cart-empty">...</span>
-            </a>
-            <div class="widget woocommerce widget_shopping_cart">
-              <div class="widget_shopping_cart_content"></div>
+            <div class="second-row">
+              <div id="menus">
+                <nav id="main-menu" class="">
+                  <a href="#main" title="Skip to content" class="visuallyhidden"
+                    >Skip to content</a
+                  >
+                </nav>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div id="header-text">
-          <div>
-            <link
-              rel="stylesheet"
-              id="jetpack-carousel-swiper-css-css"
-              href="/landing/assets/css/swiper-bundle.css?ver=10.0"
-              type="text/css"
-              media="all"
-            />
-            <link
-              rel="stylesheet"
-              id="jetpack-carousel-css"
-              href="/landing/assets/css/jetpack-carousel.css?ver=10.0"
-              type="text/css"
-              media="all"
-            />
-            <link
-              rel="stylesheet"
-              id="fl-builder-layout-13685-css"
-              href="/landing/assets/css/13685-layout-partial.css?ver=748bbeded9affc785f285e11bbb3620f"
-              type="text/css"
-              media="all"
-            />
-            <div
-              class="
-                fl-builder-content
-                fl-builder-content-13685
-                fl-builder-template
-                fl-builder-row-template
-                fl-builder-global-templates-locked
-              "
-              data-post-id="13685"
-            >
-              <div
-                class="
-                  fl-row
-                  fl-row-full-width
-                  fl-row-bg-none
-                  fl-node-59ac5fc591a6d
-                  fl-row-bg-attachment-scroll
-                "
-                data-node="59ac5fc591a6d"
-              >
-                <div class="fl-row-content-wrap">
+            <div class="cart-dropdown vamtam-header-cart-wrapper hidden">
+              <div class="cart-dropdown-inner">
+                <a class="vamtam-cart-dropdown-link" href="#">
+                  <span class="icon theme"></span>
+                  <span class="products cart-empty">...</span>
+                </a>
+                <div class="widget woocommerce widget_shopping_cart">
+                  <div class="widget_shopping_cart_content"></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="header-text">
+              <div>
+                <link
+                  rel="stylesheet"
+                  id="jetpack-carousel-swiper-css-css"
+                  href="/landing/assets/css/swiper-bundle.css?ver=10.0"
+                  type="text/css"
+                  media="all"
+                />
+                <link
+                  rel="stylesheet"
+                  id="jetpack-carousel-css"
+                  href="/landing/assets/css/jetpack-carousel.css?ver=10.0"
+                  type="text/css"
+                  media="all"
+                />
+                <link
+                  rel="stylesheet"
+                  id="fl-builder-layout-13685-css"
+                  href="/landing/assets/css/13685-layout-partial.css?ver=748bbeded9affc785f285e11bbb3620f"
+                  type="text/css"
+                  media="all"
+                />
+                <div
+                  class="
+                    fl-builder-content
+                    fl-builder-content-13685
+                    fl-builder-template
+                    fl-builder-row-template
+                    fl-builder-global-templates-locked
+                  "
+                  data-post-id="13685"
+                >
                   <div
                     class="
-                      fl-row-content fl-row-fixed-width fl-node-content
+                      fl-row
+                      fl-row-full-width
+                      fl-row-bg-none
+                      fl-node-59ac5fc591a6d
+                      fl-row-bg-attachment-scroll
                     "
+                    data-node="59ac5fc591a6d"
                   >
-                    <div
-                      class="fl-col-group fl-node-59ac5fc59199b"
-                      data-node="59ac5fc59199b"
-                    >
+                    <div class="fl-row-content-wrap vamtam-show-bg-image">
                       <div
-                        class="fl-col fl-node-59ac5fc5919ec"
-                        data-node="59ac5fc5919ec"
+                        class="
+                          fl-row-content fl-row-fixed-width fl-node-content
+                        "
                       >
-                        <div class="fl-col-content fl-node-content">
+                        <div
+                          class="fl-col-group fl-node-59ac5fc59199b"
+                          data-node="59ac5fc59199b"
+                        >
                           <div
-                            class="
-                              fl-module
-                              fl-module-vamtam-button
-                              fl-node-59ac5fc591a2e
-                            "
-                            data-node="59ac5fc591a2e"
+                            class="fl-col fl-node-59ac5fc5919ec"
+                            data-node="59ac5fc5919ec"
                           >
-                            <div class="fl-module-content fl-node-content">
+                            <div
+                              class="
+                                fl-col-content fl-node-content
+                                vamtam-show-bg-image
+                              "
+                            >
                               <div
                                 class="
-                                  vamtam-button-wrap
-                                  vamtam-button-width-auto
+                                  fl-module
+                                  fl-module-vamtam-button
+                                  fl-node-59ac5fc591a2e
                                 "
-                                style="text-align: center"
+                                data-node="59ac5fc591a2e"
                               >
-                                
+                                <div class="fl-module-content fl-node-content">
+                                  <div
+                                    class="
+                                      vamtam-button-wrap
+                                      vamtam-button-width-auto
+                                    "
+                                    style="text-align: center"
+                                  >
+                                    <a
+                                      href="https://orientationapi.hbku.edu.qa/user/login"
+                                      target="_self"
+                                      id="login-button-top"
+                                      class="
+                                        vamtam-button
+                                        accent1
+                                        hover-accent2
+                                        button-solid
+                                        icon-animation-disable
+                                      "
+                                      role="button"
+                                      style="
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        padding: 14px 28px;
+                                        background-color: #0088ce;
+                                        color: white;
+                                      "
+                                    >
+                                      <span class="vamtam-button-text">
+                                        Start Your Orientation
+                                      </span>
+                                    </a>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -160,5 +207,7 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>-->
+      </header>
+    </div>
+  </div>
+</div>
