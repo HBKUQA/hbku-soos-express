@@ -3,7 +3,8 @@
     position: relative;
   }
   .header-overlay {
-    padding-bottom: 4rem;
+    padding-bottom: 100px;
+    padding-top: 100px;
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -27,20 +28,21 @@
     height: 48px;
   }
 
-  #header-logo {
-    display: none;
+  #scrollDown {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1em;
   }
 
   @media screen and (max-width: 900px) {
     .header-overlay {
       font-size: 12px;
-    }
-    .main-header {
-      display: none;
-    }
-
-    #header-logo {
-      display: block;
     }
   }
 
@@ -55,7 +57,6 @@
   <div id="header-slider-container" class="revslider">
     <div class="header-overlay-container">
       <div class="header-overlay">
-        <img id="header-logo" src="/static/media/logo_hbku_transparent.png" />
         <span style="font-size: roboto; font-size: 3em; font-weight: 500"
           >Virtual Student</span
         >
@@ -63,16 +64,8 @@
           >Orientation 20/21</span
         >
         <span style="font-size: roboto; font-size: 2em">15 August, 2021</span>
-        <a href="/#all-speakers">
-          <div
-            id="scrollDown"
-            style="
-              text-align: center;
-              position: absolute;
-              bottom: 2em;
-              left: 48%;
-            "
-          >
+        <div id="scrollDown">
+          <a href="/#all-speakers">
             <small style="color: white">Scroll down</small><br />
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -86,8 +79,8 @@
                 d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"
               />
             </svg>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
       <div class="header-slider-wrapper">
         <p class="rs-p-wp-fix"></p>
