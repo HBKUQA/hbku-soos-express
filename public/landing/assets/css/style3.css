@@ -203,10 +203,21 @@ body .post-content .fl-row-full-width .fl-row-fixed-width {
   top: 70% !important;
 }
 
-@media screen and (min-width: 900px) {
-  /* @media screen and (min-width: 768px) { */
+@media screen and (min-width: 400px) {
   #slider-4-slide-6-layer-6 {
-    font-size: 1.8rem !important;
+    font-size: 1rem !important;
+    line-height: 1em !important;
+  }
+}
+@media screen and (min-width: 570px) {
+  #slider-4-slide-6-layer-6 {
+    font-size: 1rem !important;
+    line-height: 1.2em !important;
+  }
+}
+@media screen and (min-width: 800px) {
+  #slider-4-slide-6-layer-6 {
+    font-size: 1.5rem !important;
     line-height: 2.5rem !important;
   }
 
