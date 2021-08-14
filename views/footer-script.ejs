@@ -1091,11 +1091,13 @@
 <script>
   const loginButtonBottom = document.getElementById("login-button-bottom")
   const loginButtonTop = document.getElementById("login-button-top")
+  const startYourOrientation = document.getElementById("startYourOrientation")
   const token = localStorage.getItem("api-token")
 
   if (token) {
     loginButtonTop.setAttribute("href", "/programs")
     loginButtonBottom.setAttribute("href", "/programs")
+    startYourOrientation.setAttribute("href", "/programs")
   }
 </script>
 
