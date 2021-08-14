@@ -199,18 +199,24 @@ body .post-content .fl-row-full-width .fl-row-fixed-width {
 
 }
 
-/*@media screen and (min-width: 600px) {*/
+/* Bechir */
 #slider-4-slide-6-layer-6 {
     font-size: 1.3rem !important;
     line-height: 1.6rem !important;
 }
 
-/*}*/
+#rev_slider_9_3_wrapper .hephaistos.tparrows {
+    top: 70% !important;
+}
 
 @media screen and  (min-width: 768px) {
     #slider-4-slide-6-layer-6 {
         font-size: 1.8rem !important;
         line-height: 2.5rem !important;
+    }
+
+    #rev_slider_9_3_wrapper .hephaistos.tparrows {
+        top: 50% !important;
     }
 }
 
