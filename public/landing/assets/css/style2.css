@@ -298,3 +298,8 @@ img.emoji {
   background: none !important;
   padding: 0 !important;
 }
+
+
+#login-button-top-desktop{
+  display: none;
+}
