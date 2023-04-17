@@ -249,3 +249,6 @@ body {
   margin: 0;
   margin-left: 25px;
 }
+.team-member {
+  text-align: left !important;
+}
