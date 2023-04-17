@@ -252,3 +252,9 @@ body {
 .team-member {
   text-align: left !important;
 }
+.header-middle,
+#header-slider-container,
+.header-overlay-container,
+.header-slider-wrapper{
+  max-height: 500px;
+}
