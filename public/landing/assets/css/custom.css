@@ -258,3 +258,9 @@ body {
 .header-slider-wrapper{
   max-height: 500px;
 }
+
+@media (max-width: 768px) {
+  .fl-node-5b01fd6b2ce78{
+    display: none;
+  }
+}
